@@ -191,39 +191,39 @@ def if_finish_list(lst):
 
 def prepare_dataset(dataset_name):
     if dataset_name == 'cwq':
-        with open('../data/cwq.json',encoding='utf-8') as f:
+        with open('F:\\CodingEnvironment\\tog\\data\\cwq.json',encoding='utf-8') as f:
             datas = json.load(f)
         question_string = 'question'
     elif dataset_name == 'webqsp':
-        with open('../data/WebQSP.json',encoding='utf-8') as f:
+        with open('F:\\CodingEnvironment\\tog\\data\\WebQSP.json',encoding='utf-8') as f:
             datas = json.load(f)
         question_string = 'RawQuestion'
     elif dataset_name == 'grailqa':
-        with open('../data/grailqa.json',encoding='utf-8') as f:
+        with open('F:\\CodingEnvironment\\tog\\data\\grailqa.json',encoding='utf-8') as f:
             datas = json.load(f)
         question_string = 'question'
     elif dataset_name == 'simpleqa':
-        with open('../data/SimpleQA.json',encoding='utf-8') as f:
+        with open('F:\\CodingEnvironment\\tog\\data\\SimpleQA.json',encoding='utf-8') as f:
             datas = json.load(f)    
         question_string = 'question'
     elif dataset_name == 'qald':
-        with open('../data/qald_10-en.json',encoding='utf-8') as f:
+        with open('F:\\CodingEnvironment\\tog\\data\\qald_10-en.json',encoding='utf-8') as f:
             datas = json.load(f) 
         question_string = 'question'   
     elif dataset_name == 'webquestions':
-        with open('../data/WebQuestions.json',encoding='utf-8') as f:
+        with open('F:\\CodingEnvironment\\tog\\data\\WebQuestions.json',encoding='utf-8') as f:
             datas = json.load(f)
         question_string = 'question'
     elif dataset_name == 'trex':
-        with open('../data/T-REX.json',encoding='utf-8') as f:
+        with open('F:\\CodingEnvironment\\tog\\data\\T-REX.json',encoding='utf-8') as f:
             datas = json.load(f)
         question_string = 'input'    
     elif dataset_name == 'zeroshotre':
-        with open('../data/Zero_Shot_RE.json',encoding='utf-8') as f:
+        with open('F:\\CodingEnvironment\\tog\\data\\Zero_Shot_RE.json',encoding='utf-8') as f:
             datas = json.load(f)
         question_string = 'input'    
     elif dataset_name == 'creak':
-        with open('../data/creak.json',encoding='utf-8') as f:
+        with open('F:\\CodingEnvironment\\tog\\data\\creak.json',encoding='utf-8') as f:
             datas = json.load(f)
         question_string = 'sentence'
     else:
