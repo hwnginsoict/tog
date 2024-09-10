@@ -3,6 +3,7 @@ openai
 SPARQLWrapper
 tqdm
 argparse
+dotenv
 
 # if need to use BM25, SentenceBERT as pruning tools.
 rank_bm25
