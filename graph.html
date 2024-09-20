@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 600px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+             #config {
+                 float: left;
+                 width: 400px;
+                 height: 600px;
+             }
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+            <div id="config"></div>
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"group": "company", "id": "FPT Smart Cloud", "label": "FPT Smart Cloud", "shape": "dot"}, {"group": "company", "id": "T\u1eadp \u0111o\u00e0n FPT", "label": "T\u1eadp \u0111o\u00e0n FPT", "shape": "dot"}, {"group": "vision", "id": "Tr\u00ed tu\u1ec7 nh\u00e2n t\u1ea1o", "label": "Tr\u00ed tu\u1ec7 nh\u00e2n t\u1ea1o", "shape": "dot"}, {"group": "vision", "id": "\u0110i\u1ec7n to\u00e1n \u0111\u00e1m m\u00e2y", "label": "\u0110i\u1ec7n to\u00e1n \u0111\u00e1m m\u00e2y", "shape": "dot"}, {"group": "award", "id": "Top 1 N\u01a1i l\u00e0m vi\u1ec7c t\u1ed1t nh\u1ea5t ng\u00e0nh c\u00f4ng ngh\u1ec7", "label": "Top 1 N\u01a1i l\u00e0m vi\u1ec7c t\u1ed1t nh\u1ea5t ng\u00e0nh c\u00f4ng ngh\u1ec7", "shape": "dot"}, {"group": "value", "id": "Tinh th\u1ea7n FPT", "label": "Tinh th\u1ea7n FPT", "shape": "dot"}, {"group": "value", "id": "GEN c\u1ee7a FPT", "label": "GEN c\u1ee7a FPT", "shape": "dot"}, {"group": "person", "id": "Nguy\u1ec5n Th\u1ebf Ph\u01b0\u01a1ng", "label": "Nguy\u1ec5n Th\u1ebf Ph\u01b0\u01a1ng", "shape": "dot"}, {"group": "person", "id": "L\u00ea H\u1ed3ng Vi\u1ec7t", "label": "L\u00ea H\u1ed3ng Vi\u1ec7t", "shape": "dot"}, {"group": "person", "id": "Nguy\u1ec5n Ng\u1ecdc Minh", "label": "Nguy\u1ec5n Ng\u1ecdc Minh", "shape": "dot"}, {"group": "person", "id": "\u0110o\u00e0n \u0110\u0103ng Khoa", "label": "\u0110o\u00e0n \u0110\u0103ng Khoa", "shape": "dot"}, {"group": "person", "id": "Tr\u1ea7n Th\u1ebf Trung", "label": "Tr\u1ea7n Th\u1ebf Trung", "shape": "dot"}, {"group": "person", "id": "Ng\u00f4 Xu\u00e2n B\u00e1ch", "label": "Ng\u00f4 Xu\u00e2n B\u00e1ch", "shape": "dot"}, {"group": "person", "id": "V\u0169 H\u1ea3i Y\u1ebfn", "label": "V\u0169 H\u1ea3i Y\u1ebfn", "shape": "dot"}, {"group": "person", "id": "Ho\u00e0ng Danh Li\u00eam", "label": "Ho\u00e0ng Danh Li\u00eam", "shape": "dot"}, {"group": "person", "id": "H\u1ed3 Minh Th\u1eafng", "label": "H\u1ed3 Minh Th\u1eafng", "shape": "dot"}, {"group": "person", "id": "Phan H\u1ed3 H\u00e0 Ph\u01b0\u01a1ng", "label": "Phan H\u1ed3 H\u00e0 Ph\u01b0\u01a1ng", "shape": "dot"}, {"group": "person", "id": "Phan H\u1ed3ng T\u00e2m", "label": "Phan H\u1ed3ng T\u00e2m", "shape": "dot"}, {"group": "person", "id": "L\u00ea Thanh H\u1ea3i", "label": "L\u00ea Thanh H\u1ea3i", "shape": "dot"}, {"group": "person", "id": "Tr\u1ea7n Huy V\u0169", "label": "Tr\u1ea7n Huy V\u0169", "shape": "dot"}, {"group": "person", "id": "\u0110o\u00e0n Tr\u1ecdng D\u0169ng", "label": "\u0110o\u00e0n Tr\u1ecdng D\u0169ng", "shape": "dot"}, {"group": "person", "id": "Nguy\u1ec5n \u0110\u00ecnh Vi\u1ec7t", "label": "Nguy\u1ec5n \u0110\u00ecnh Vi\u1ec7t", "shape": "dot"}, {"group": "person", "id": "Nguy\u1ec5n Kh\u01b0\u01a1ng Duy", "label": "Nguy\u1ec5n Kh\u01b0\u01a1ng Duy", "shape": "dot"}, {"group": "person", "id": "V\u0169 Quang Chi\u1ebfn", "label": "V\u0169 Quang Chi\u1ebfn", "shape": "dot"}, {"group": "person", "id": "D\u01b0\u01a1ng L\u00ea Minh \u0110\u1ee9c", "label": "D\u01b0\u01a1ng L\u00ea Minh \u0110\u1ee9c", "shape": "dot"}, {"group": "person", "id": "B\u00f9i Minh Ti\u1ebfn", "label": "B\u00f9i Minh Ti\u1ebfn", "shape": "dot"}, {"group": "person", "id": "Tr\u1ea7n \u0110\u1ed1c C\u00f4ng", "label": "Tr\u1ea7n \u0110\u1ed1c C\u00f4ng", "shape": "dot"}, {"group": "person", "id": "V\u0169 Ki\u1ec1u Trang", "label": "V\u0169 Ki\u1ec1u Trang", "shape": "dot"}, {"group": "person", "id": "Nguy\u1ec5n Th\u1ecb Hi\u1ebfu", "label": "Nguy\u1ec5n Th\u1ecb Hi\u1ebfu", "shape": "dot"}, {"group": "person", "id": "L\u00fd Vi\u1ec7t Th\u1eafng", "label": "L\u00fd Vi\u1ec7t Th\u1eafng", "shape": "dot"}, {"group": "person", "id": "L\u00ea Nguy\u00ean Th\u1ea3o", "label": "L\u00ea Nguy\u00ean Th\u1ea3o", "shape": "dot"}, {"group": "person", "id": "Phan Th\u1ecb Thu H\u00e0", "label": "Phan Th\u1ecb Thu H\u00e0", "shape": "dot"}, {"group": "person", "id": "\u0110\u1ed7 Kim Hoa", "label": "\u0110\u1ed7 Kim Hoa", "shape": "dot"}, {"group": "person", "id": "Phan Th\u1ecb H\u1ea3i S\u01a1n", "label": "Phan Th\u1ecb H\u1ea3i S\u01a1n", "shape": "dot"}, {"group": "person", "id": "Phan Th\u1ebf Minh", "label": "Phan Th\u1ebf Minh", "shape": "dot"}, {"group": "person", "id": "L\u00ea \u0110\u1ee9c An", "label": "L\u00ea \u0110\u1ee9c An", "shape": "dot"}, {"group": "person", "id": "Nguy\u1ec5n Duy \u0110\u1ecbnh", "label": "Nguy\u1ec5n Duy \u0110\u1ecbnh", "shape": "dot"}, {"group": "person", "id": "Ph\u1ea1m Th\u1ecb Nhung", "label": "Ph\u1ea1m Th\u1ecb Nhung", "shape": "dot"}, {"group": "division", "id": "D\u1ef1 \u00c1n NCP", "label": "D\u1ef1 \u00c1n NCP", "shape": "dot"}, {"group": "division", "id": "Kh\u1ed1i s\u1ea3n ph\u1ea9m AI", "label": "Kh\u1ed1i s\u1ea3n ph\u1ea9m AI", "shape": "dot"}, {"group": "division", "id": "Kh\u1ed1i C\u00f4ng ngh\u1ec7 Cloud", "label": "Kh\u1ed1i C\u00f4ng ngh\u1ec7 Cloud", "shape": "dot"}, {"group": "division", "id": "Kh\u1ed1i Kinh Doanh", "label": "Kh\u1ed1i Kinh Doanh", "shape": "dot"}, {"group": "division", "id": "Kh\u1ed1i V\u1eadn H\u00e0nh", "label": "Kh\u1ed1i V\u1eadn H\u00e0nh", "shape": "dot"}, {"group": "department", "id": "Trung t\u00e2m s\u1ea3n ph\u1ea9m Conversation", "label": "Trung t\u00e2m s\u1ea3n ph\u1ea9m Conversation", "shape": "dot"}, {"group": "department", "id": "Trung t\u00e2m s\u1ea3n ph\u1ea9m Vision", "label": "Trung t\u00e2m s\u1ea3n ph\u1ea9m Vision", "shape": "dot"}, {"group": "department", "id": "Trung t\u00e2m s\u1ea3n ph\u1ea9m GenAI", "label": "Trung t\u00e2m s\u1ea3n ph\u1ea9m GenAI", "shape": "dot"}, {"group": "department", "id": "Ph\u00f2ng T\u01b0 v\u1ea5n v\u00e0 Tri\u1ec3n Khai AI", "label": "Ph\u00f2ng T\u01b0 v\u1ea5n v\u00e0 Tri\u1ec3n Khai AI", "shape": "dot"}, {"group": "department", "id": "Ph\u00f2ng SWAT", "label": "Ph\u00f2ng SWAT", "shape": "dot"}, {"group": "department", "id": "Ph\u00f2ng Gi\u1ea3i ph\u00e1p AI", "label": "Ph\u00f2ng Gi\u1ea3i ph\u00e1p AI", "shape": "dot"}, {"group": "department", "id": "Trung T\u00e2m V\u1eadn H\u00e0nh Cloud", "label": "Trung T\u00e2m V\u1eadn H\u00e0nh Cloud", "shape": "dot"}, {"group": "department", "id": "Ph\u00f2ng T\u01b0 V\u1ea5n \u0026 Tri\u1ec3n Khai Cloud", "label": "Ph\u00f2ng T\u01b0 V\u1ea5n \u0026 Tri\u1ec3n Khai Cloud", "shape": "dot"}, {"group": "department", "id": "Trung T\u00e2m Ph\u00e1t Tri\u1ec3n D\u1ecbch V\u1ee5 H\u1ea1 T\u1ea7ng Cloud", "label": "Trung T\u00e2m Ph\u00e1t Tri\u1ec3n D\u1ecbch V\u1ee5 H\u1ea1 T\u1ea7ng Cloud", "shape": "dot"}, {"group": "department", "id": "Trung T\u00e2m Ph\u00e1t Tri\u1ec3n D\u1ecbch V\u1ee5 n\u1ec1n t\u1ea3ng Cloud", "label": "Trung T\u00e2m Ph\u00e1t Tri\u1ec3n D\u1ecbch V\u1ee5 n\u1ec1n t\u1ea3ng Cloud", "shape": "dot"}, {"group": "department", "id": "Trung T\u00e2m Ph\u00e1t Tri\u1ec3n D\u1ecbch V\u1ee5 Ph\u1ea7n M\u1ec1m Cloud", "label": "Trung T\u00e2m Ph\u00e1t Tri\u1ec3n D\u1ecbch V\u1ee5 Ph\u1ea7n M\u1ec1m Cloud", "shape": "dot"}, {"group": "department", "id": "Trung T\u00e2m Kinh Doanh AI", "label": "Trung T\u00e2m Kinh Doanh AI", "shape": "dot"}, {"group": "department", "id": "Trung T\u00e2m Kinh Doanh Cloud", "label": "Trung T\u00e2m Kinh Doanh Cloud", "shape": "dot"}, {"group": "department", "id": "Ph\u00f2ng Kinh Doanh CFS", "label": "Ph\u00f2ng Kinh Doanh CFS", "shape": "dot"}, {"group": "department", "id": "Ph\u00f2ng Marketing", "label": "Ph\u00f2ng Marketing", "shape": "dot"}, {"group": "department", "id": "Ph\u00f2ng Nh\u00e2n S\u1ef1", "label": "Ph\u00f2ng Nh\u00e2n S\u1ef1", "shape": "dot"}, {"group": "department", "id": "Ph\u00f2ng T\u00e0i Ch\u00ednh K\u1ebf To\u00e1n", "label": "Ph\u00f2ng T\u00e0i Ch\u00ednh K\u1ebf To\u00e1n", "shape": "dot"}, {"group": "department", "id": "Ph\u00f2ng H\u00e0nh Ch\u00ednh", "label": "Ph\u00f2ng H\u00e0nh Ch\u00ednh", "shape": "dot"}, {"group": "department", "id": "Ph\u00f2ng Qu\u1ea3n L\u00fd Ch\u1ea5t L\u01b0\u1ee3ng", "label": "Ph\u00f2ng Qu\u1ea3n L\u00fd Ch\u1ea5t L\u01b0\u1ee3ng", "shape": "dot"}, {"group": "department", "id": "Ph\u00f2ng Ph\u1ea7n M\u1ec1m CFS", "label": "Ph\u00f2ng Ph\u1ea7n M\u1ec1m CFS", "shape": "dot"}, {"group": "department", "id": "Ph\u00f2ng Data Fusion", "label": "Ph\u00f2ng Data Fusion", "shape": "dot"}, {"group": "department", "id": "Ph\u00f2ng Ph\u1ea7n M\u1ec1m \u1ee8ng D\u1ee5ng", "label": "Ph\u00f2ng Ph\u1ea7n M\u1ec1m \u1ee8ng D\u1ee5ng", "shape": "dot"}, {"group": "department", "id": "Ph\u00f2ng Ch\u0103m S\u00f3c Kh\u00e1ch H\u00e0ng", "label": "Ph\u00f2ng Ch\u0103m S\u00f3c Kh\u00e1ch H\u00e0ng", "shape": "dot"}]);
+                  edges = new vis.DataSet([{"from": "FPT Smart Cloud", "title": "HAS_DIVISION", "to": "T\u1eadp \u0111o\u00e0n FPT"}, {"from": "FPT Smart Cloud", "title": "HAS_VISION", "to": "Tr\u00ed tu\u1ec7 nh\u00e2n t\u1ea1o"}, {"from": "FPT Smart Cloud", "title": "HAS_VISION", "to": "\u0110i\u1ec7n to\u00e1n \u0111\u00e1m m\u00e2y"}, {"from": "FPT Smart Cloud", "title": "HAS_AWARD", "to": "Top 1 N\u01a1i l\u00e0m vi\u1ec7c t\u1ed1t nh\u1ea5t ng\u00e0nh c\u00f4ng ngh\u1ec7"}, {"from": "FPT Smart Cloud", "title": "HAS_VALUE", "to": "Tinh th\u1ea7n FPT"}, {"from": "FPT Smart Cloud", "title": "HAS_VALUE", "to": "GEN c\u1ee7a FPT"}, {"from": "FPT Smart Cloud", "title": "WORK_IN", "to": "Nguy\u1ec5n Th\u1ebf Ph\u01b0\u01a1ng"}, {"from": "FPT Smart Cloud", "title": "WORK_IN", "to": "L\u00ea H\u1ed3ng Vi\u1ec7t"}, {"from": "FPT Smart Cloud", "title": "WORK_IN", "to": "Nguy\u1ec5n Ng\u1ecdc Minh"}, {"from": "FPT Smart Cloud", "title": "HAS_DIVISION", "to": "Kh\u1ed1i s\u1ea3n ph\u1ea9m AI"}, {"from": "FPT Smart Cloud", "title": "HAS_DIVISION", "to": "Kh\u1ed1i C\u00f4ng ngh\u1ec7 Cloud"}, {"from": "FPT Smart Cloud", "title": "HAS_DIVISION", "to": "Kh\u1ed1i Kinh Doanh"}, {"from": "FPT Smart Cloud", "title": "HAS_DIVISION", "to": "Kh\u1ed1i V\u1eadn H\u00e0nh"}, {"from": "Kh\u1ed1i s\u1ea3n ph\u1ea9m AI", "title": "HAS_DEPARTMENT", "to": "Trung t\u00e2m s\u1ea3n ph\u1ea9m Conversation"}, {"from": "Kh\u1ed1i s\u1ea3n ph\u1ea9m AI", "title": "HAS_DEPARTMENT", "to": "Trung t\u00e2m s\u1ea3n ph\u1ea9m Vision"}, {"from": "Kh\u1ed1i s\u1ea3n ph\u1ea9m AI", "title": "HAS_DEPARTMENT", "to": "Trung t\u00e2m s\u1ea3n ph\u1ea9m GenAI"}, {"from": "Kh\u1ed1i s\u1ea3n ph\u1ea9m AI", "title": "HAS_DEPARTMENT", "to": "Ph\u00f2ng T\u01b0 v\u1ea5n v\u00e0 Tri\u1ec3n Khai AI"}, {"from": "Kh\u1ed1i s\u1ea3n ph\u1ea9m AI", "title": "HAS_DEPARTMENT", "to": "Ph\u00f2ng SWAT"}, {"from": "Kh\u1ed1i s\u1ea3n ph\u1ea9m AI", "title": "HAS_DEPARTMENT", "to": "Ph\u00f2ng Gi\u1ea3i ph\u00e1p AI"}, {"from": "Kh\u1ed1i C\u00f4ng ngh\u1ec7 Cloud", "title": "HAS_DEPARTMENT", "to": "Trung T\u00e2m V\u1eadn H\u00e0nh Cloud"}, {"from": "Kh\u1ed1i C\u00f4ng ngh\u1ec7 Cloud", "title": "HAS_DEPARTMENT", "to": "Ph\u00f2ng T\u01b0 V\u1ea5n \u0026 Tri\u1ec3n Khai Cloud"}, {"from": "Kh\u1ed1i C\u00f4ng ngh\u1ec7 Cloud", "title": "HAS_DEPARTMENT", "to": "Trung T\u00e2m Ph\u00e1t Tri\u1ec3n D\u1ecbch V\u1ee5 H\u1ea1 T\u1ea7ng Cloud"}, {"from": "Kh\u1ed1i C\u00f4ng ngh\u1ec7 Cloud", "title": "HAS_DEPARTMENT", "to": "Trung T\u00e2m Ph\u00e1t Tri\u1ec3n D\u1ecbch V\u1ee5 n\u1ec1n t\u1ea3ng Cloud"}, {"from": "Kh\u1ed1i C\u00f4ng ngh\u1ec7 Cloud", "title": "HAS_DEPARTMENT", "to": "Trung T\u00e2m Ph\u00e1t Tri\u1ec3n D\u1ecbch V\u1ee5 Ph\u1ea7n M\u1ec1m Cloud"}, {"from": "Kh\u1ed1i Kinh Doanh", "title": "HAS_DEPARTMENT", "to": "Trung T\u00e2m Kinh Doanh AI"}, {"from": "Kh\u1ed1i Kinh Doanh", "title": "HAS_DEPARTMENT", "to": "Trung T\u00e2m Kinh Doanh Cloud"}, {"from": "Kh\u1ed1i Kinh Doanh", "title": "HAS_DEPARTMENT", "to": "Ph\u00f2ng Kinh Doanh CFS"}, {"from": "Kh\u1ed1i Kinh Doanh", "title": "HAS_DEPARTMENT", "to": "Ph\u00f2ng Marketing"}, {"from": "Kh\u1ed1i V\u1eadn H\u00e0nh", "title": "HAS_DEPARTMENT", "to": "Ph\u00f2ng Nh\u00e2n S\u1ef1"}, {"from": "Kh\u1ed1i V\u1eadn H\u00e0nh", "title": "HAS_DEPARTMENT", "to": "Ph\u00f2ng T\u00e0i Ch\u00ednh K\u1ebf To\u00e1n"}, {"from": "Kh\u1ed1i V\u1eadn H\u00e0nh", "title": "HAS_DEPARTMENT", "to": "Ph\u00f2ng H\u00e0nh Ch\u00ednh"}, {"from": "Kh\u1ed1i V\u1eadn H\u00e0nh", "title": "HAS_DEPARTMENT", "to": "Ph\u00f2ng Qu\u1ea3n L\u00fd Ch\u1ea5t L\u01b0\u1ee3ng"}, {"from": "Kh\u1ed1i V\u1eadn H\u00e0nh", "title": "HAS_DEPARTMENT", "to": "Ph\u00f2ng Ph\u1ea7n M\u1ec1m CFS"}, {"from": "Kh\u1ed1i V\u1eadn H\u00e0nh", "title": "HAS_DEPARTMENT", "to": "Ph\u00f2ng Data Fusion"}, {"from": "Kh\u1ed1i V\u1eadn H\u00e0nh", "title": "HAS_DEPARTMENT", "to": "Ph\u00f2ng Ph\u1ea7n M\u1ec1m \u1ee8ng D\u1ee5ng"}, {"from": "Kh\u1ed1i V\u1eadn H\u00e0nh", "title": "HAS_DEPARTMENT", "to": "Ph\u00f2ng Ch\u0103m S\u00f3c Kh\u00e1ch H\u00e0ng"}, {"from": "L\u00ea H\u1ed3ng Vi\u1ec7t", "title": "WORK_IN", "to": "Kh\u1ed1i s\u1ea3n ph\u1ea9m AI"}, {"from": "Nguy\u1ec5n Ng\u1ecdc Minh", "title": "WORK_IN", "to": "Kh\u1ed1i s\u1ea3n ph\u1ea9m AI"}, {"from": "\u0110o\u00e0n \u0110\u0103ng Khoa", "title": "WORK_IN", "to": "Kh\u1ed1i s\u1ea3n ph\u1ea9m AI"}, {"from": "Tr\u1ea7n Th\u1ebf Trung", "title": "WORK_IN", "to": "Kh\u1ed1i s\u1ea3n ph\u1ea9m AI"}, {"from": "Ng\u00f4 Xu\u00e2n B\u00e1ch", "title": "WORK_IN", "to": "Kh\u1ed1i s\u1ea3n ph\u1ea9m AI"}, {"from": "V\u0169 H\u1ea3i Y\u1ebfn", "title": "WORK_IN", "to": "Trung t\u00e2m s\u1ea3n ph\u1ea9m Conversation"}, {"from": "Ho\u00e0ng Danh Li\u00eam", "title": "WORK_IN", "to": "Trung t\u00e2m s\u1ea3n ph\u1ea9m Vision"}, {"from": "Ng\u00f4 Xu\u00e2n B\u00e1ch", "title": "WORK_IN", "to": "Trung t\u00e2m s\u1ea3n ph\u1ea9m GenAI"}, {"from": "H\u1ed3 Minh Th\u1eafng", "title": "WORK_IN", "to": "Ph\u00f2ng T\u01b0 v\u1ea5n v\u00e0 Tri\u1ec3n Khai AI"}, {"from": "Tr\u1ea7n Th\u1ebf Trung", "title": "WORK_IN", "to": "Ph\u00f2ng SWAT"}, {"from": "Phan H\u1ed3 H\u00e0 Ph\u01b0\u01a1ng", "title": "WORK_IN", "to": "Ph\u00f2ng Gi\u1ea3i ph\u00e1p AI"}, {"from": "Phan H\u1ed3ng T\u00e2m", "title": "WORK_IN", "to": "Kh\u1ed1i C\u00f4ng ngh\u1ec7 Cloud"}, {"from": "L\u00ea Thanh H\u1ea3i", "title": "WORK_IN", "to": "Kh\u1ed1i C\u00f4ng ngh\u1ec7 Cloud"}, {"from": "Tr\u1ea7n Huy V\u0169", "title": "WORK_IN", "to": "Trung T\u00e2m V\u1eadn H\u00e0nh Cloud"}, {"from": "\u0110o\u00e0n Tr\u1ecdng D\u0169ng", "title": "WORK_IN", "to": "Trung T\u00e2m V\u1eadn H\u00e0nh Cloud"}, {"from": "Nguy\u1ec5n \u0110\u00ecnh Vi\u1ec7t", "title": "WORK_IN", "to": "Ph\u00f2ng T\u01b0 V\u1ea5n \u0026 Tri\u1ec3n Khai Cloud"}, {"from": "Nguy\u1ec5n Kh\u01b0\u01a1ng Duy", "title": "WORK_IN", "to": "Trung T\u00e2m Ph\u00e1t Tri\u1ec3n D\u1ecbch V\u1ee5 H\u1ea1 T\u1ea7ng Cloud"}, {"from": "L\u00ea Thanh H\u1ea3i", "title": "WORK_IN", "to": "Trung T\u00e2m Ph\u00e1t Tri\u1ec3n D\u1ecbch V\u1ee5 n\u1ec1n t\u1ea3ng Cloud"}, {"from": "V\u0169 Quang Chi\u1ebfn", "title": "WORK_IN", "to": "Trung T\u00e2m Ph\u00e1t Tri\u1ec3n D\u1ecbch V\u1ee5 Ph\u1ea7n M\u1ec1m Cloud"}, {"from": "\u0110o\u00e0n \u0110\u0103ng Khoa", "title": "WORK_IN", "to": "Kh\u1ed1i Kinh Doanh"}, {"from": "D\u01b0\u01a1ng L\u00ea Minh \u0110\u1ee9c", "title": "WORK_IN", "to": "Trung T\u00e2m Kinh Doanh AI"}, {"from": "B\u00f9i Minh Ti\u1ebfn", "title": "WORK_IN", "to": "Trung T\u00e2m Kinh Doanh Cloud"}, {"from": "Tr\u1ea7n \u0110\u1ed1c C\u00f4ng", "title": "WORK_IN", "to": "Trung T\u00e2m Kinh Doanh Cloud"}, {"from": "V\u0169 Ki\u1ec1u Trang", "title": "WORK_IN", "to": "Trung T\u00e2m Kinh Doanh Cloud"}, {"from": "Nguy\u1ec5n Th\u1ecb Hi\u1ebfu", "title": "WORK_IN", "to": "Ph\u00f2ng Kinh Doanh CFS"}, {"from": "L\u00fd Vi\u1ec7t Th\u1eafng", "title": "WORK_IN", "to": "Ph\u00f2ng Marketing"}, {"from": "L\u00ea Nguy\u00ean Th\u1ea3o", "title": "WORK_IN", "to": "Ph\u00f2ng Marketing"}, {"from": "Nguy\u1ec5n Ng\u1ecdc Minh", "title": "WORK_IN", "to": "Kh\u1ed1i V\u1eadn H\u00e0nh"}, {"from": "Phan Th\u1ecb Thu H\u00e0", "title": "WORK_IN", "to": "Ph\u00f2ng Nh\u00e2n S\u1ef1"}, {"from": "\u0110\u1ed7 Kim Hoa", "title": "WORK_IN", "to": "Ph\u00f2ng T\u00e0i Ch\u00ednh K\u1ebf To\u00e1n"}, {"from": "Phan Th\u1ecb H\u1ea3i S\u01a1n", "title": "WORK_IN", "to": "Ph\u00f2ng H\u00e0nh Ch\u00ednh"}, {"from": "Phan Th\u1ebf Minh", "title": "WORK_IN", "to": "Ph\u00f2ng Qu\u1ea3n L\u00fd Ch\u1ea5t L\u01b0\u1ee3ng"}, {"from": "L\u00ea \u0110\u1ee9c An", "title": "WORK_IN", "to": "Ph\u00f2ng Ph\u1ea7n M\u1ec1m CFS"}, {"from": "V\u0169 Quang Chi\u1ebfn", "title": "WORK_IN", "to": "Ph\u00f2ng Data Fusion"}, {"from": "Nguy\u1ec5n Duy \u0110\u1ecbnh", "title": "WORK_IN", "to": "Ph\u00f2ng Ph\u1ea7n M\u1ec1m \u1ee8ng D\u1ee5ng"}, {"from": "Ph\u1ea1m Th\u1ecb Nhung", "title": "WORK_IN", "to": "Ph\u00f2ng Ch\u0103m S\u00f3c Kh\u00e1ch H\u00e0ng"}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": true
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+                  // if this network requires displaying the configure window,
+                  // put it in its div
+                  options.configure["container"] = document.getElementById("config");
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

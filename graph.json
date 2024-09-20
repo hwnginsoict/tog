@@ -1,0 +1,1465 @@
+[
+    {
+        "nodes": [
+            {
+                "name": "FPT Smart Cloud",
+                "type": "company"
+            },
+            {
+                "name": "Tập đoàn FPT",
+                "type": "company"
+            },
+            {
+                "name": "Trí tuệ nhân tạo",
+                "type": "vision"
+            },
+            {
+                "name": "Điện toán đám mây",
+                "type": "vision"
+            },
+            {
+                "name": "Top 1 Nơi làm việc tốt nhất ngành công nghệ",
+                "type": "award"
+            },
+            {
+                "name": "Tinh thần FPT",
+                "type": "value"
+            },
+            {
+                "name": "GEN của FPT",
+                "type": "value"
+            }
+        ],
+        "relationships": [
+            {
+                "source": {
+                    "name": "FPT Smart Cloud",
+                    "type": "company"
+                },
+                "target": {
+                    "name": "Tập đoàn FPT",
+                    "type": "company"
+                },
+                "type": "HAS_DIVISION",
+                "properties": {
+                    "triplet_sentence": "FPT Smart Cloud là một thành viên của Tập đoàn FPT, thể hiện mối quan hệ 'HAS DIVISION' giữa hai tổ chức này."
+                }
+            },
+            {
+                "source": {
+                    "name": "FPT Smart Cloud",
+                    "type": "company"
+                },
+                "target": {
+                    "name": "Trí tuệ nhân tạo",
+                    "type": "vision"
+                },
+                "type": "HAS_VISION",
+                "properties": {
+                    "triplet_sentence": "FPT Smart Cloud có tầm nhìn chiến lược liên quan đến Trí tuệ nhân tạo, nhằm biến mọi doanh nghiệp trở thành doanh nghiệp số thông qua các giải pháp sáng tạo, thể hiện mối quan hệ 'HAS VISION'."
+                }
+            },
+            {
+                "source": {
+                    "name": "FPT Smart Cloud",
+                    "type": "company"
+                },
+                "target": {
+                    "name": "Điện toán đám mây",
+                    "type": "vision"
+                },
+                "type": "HAS_VISION",
+                "properties": {
+                    "triplet_sentence": "FPT Smart Cloud cũng có tầm nhìn chiến lược về Điện toán đám mây, với mục tiêu giúp doanh nghiệp chuyển đổi số một cách linh hoạt và hiệu quả, thể hiện mối quan hệ 'HAS VISION'."
+                }
+            },
+            {
+                "source": {
+                    "name": "FPT Smart Cloud",
+                    "type": "company"
+                },
+                "target": {
+                    "name": "Top 1 Nơi làm việc tốt nhất ngành công nghệ",
+                    "type": "award"
+                },
+                "type": "HAS_AWARD",
+                "properties": {
+                    "triplet_sentence": "Danh hiệu 'Top 1 Nơi làm việc tốt nhất ngành công nghệ' mà FPT Smart Cloud đạt được chứng minh cho môi trường làm việc hạnh phúc và sáng tạo, thể hiện mối quan hệ 'HAS AWARD'."
+                }
+            },
+            {
+                "source": {
+                    "name": "FPT Smart Cloud",
+                    "type": "company"
+                },
+                "target": {
+                    "name": "Tinh thần FPT",
+                    "type": "value"
+                },
+                "type": "HAS_VALUE",
+                "properties": {
+                    "triplet_sentence": "Tinh thần FPT được xem là giá trị cốt lõi mà FPT Smart Cloud hướng tới, thể hiện mối quan hệ 'HAS VALUE' giữa tổ chức và giá trị này."
+                }
+            },
+            {
+                "source": {
+                    "name": "FPT Smart Cloud",
+                    "type": "company"
+                },
+                "target": {
+                    "name": "GEN của FPT",
+                    "type": "value"
+                },
+                "type": "HAS_VALUE",
+                "properties": {
+                    "triplet_sentence": "GEN của FPT là một phần không thể thiếu trong việc kiến tạo nên sức mạnh và tinh thần của FPT, và FPT Smart Cloud cũng chia sẻ giá trị này, thể hiện mối quan hệ 'HAS VALUE'."
+                }
+            }
+        ],
+        "metadata": {
+            "document_id": "06627b38-7b21-4291-acf7-0ef1b03771c8",
+            "tenant_id": "22f29fee-b631-435d-8486-5756f066d5f4",
+            "location": [
+                {
+                    "page": 1,
+                    "bbox": [
+                        71.51421356201172,
+                        657.0866088867188,
+                        330.310791015625,
+                        718.751220703125
+                    ]
+                },
+                {
+                    "page": 2,
+                    "bbox": [
+                        99.74747467041016,
+                        70.54546356201172,
+                        538.9876708984375,
+                        709.2515258789062
+                    ]
+                },
+                {
+                    "page": 3,
+                    "bbox": [
+                        99.79295349121094,
+                        71.22254943847656,
+                        463.8907775878906,
+                        206.7315673828125
+                    ]
+                }
+            ]
+        },
+        "content": "Thông tin chung về công ty FPT Smart Cloud (FCI)\n1. Giới thiệu chung\nFPT Smart Cloud – thành viên Tập đoàn FPT, cung cấp giải pháp ứng dụng Trí tuệ nhân tạo (AI) & Điện toán đám mây (Cloud Computing) hàng đầu tại Việt Nam. FPT Smart Cloud ra đời với sứ mệnh giúp các doanh nghiệp chuyển đổi số linh hoạt, sáng tạo và tạo ra bước đột phá trong hoạt động vận hành với các dịch vụ đẳng cấp thế giới\n1.1. Tầm nhìn chiến lược\nTầm nhìn của FPT Smart Cloud là biến mọi doanh nghiệp trở thành doanh nghiệp số, bằng đột phá sáng tạo trong công nghệ và sản phẩm. Tiên phong nghiên cứu và phát triển các giải pháp chuyển đổi số toàn diện về Trí tuệ nhân tạo (AI) và Điện toán đám mây (Cloud), FPT Smart Cloud đồng hành cùng hàng ngàn doanh nghiệp chuyển đổi số thành công, tạo ra bước đột phá và tối ưu trong hiệu suất vận hành, mang trải nghiệm khách hàng lên tầm cao mới.\nFPT Smart Cloud sẽ trở thành nền tảng chuyển đổi số, tích hợp hệ sinh thái các công nghệ mới nhất trên thế giới phù hợp với những đặc thù của môi trường kinh doanh tại Việt Nam, để các doanh nghiệp Việt ứng dụng nhanh nhất, dễ dàng nhất.\n1.2. Giá trị cốt lõi\n\"Tôn, Đổi, Đồng – Chí, Gương, Sáng\" được xem là một phần không thể thiếu kiến tạo nên bộ GEN của FPT, là Tinh thần FPT, là sức mạnh thúc đẩy lãnh đạo, CBNV của Tập đoàn không ngừng nỗ lực, sáng tạo vì lợi ích chung của cộng đồng, khách hàng, cổ đông và các bên liên quan khác. Đó cũng là giá trị mà FPT Smart Cloud hướng tới.\n1.3. Văn hóa doanh nghiệp\nDanh hiệu “Top 1 Nơi làm việc tốt nhất ngành công nghệ” là bảo chứng cho một môi trường hạnh phúc, nơi người FPT không chỉ đột phá trong công việc, mà còn được kết nối bởi tình đồng đội, sự cởi mở và chân thành."
+    },
+    {
+        "nodes": [
+            {
+                "name": "FPT Smart Cloud",
+                "type": "company"
+            }
+        ],
+        "relationships": [],
+        "metadata": {
+            "document_id": "06627b38-7b21-4291-acf7-0ef1b03771c8",
+            "tenant_id": "22f29fee-b631-435d-8486-5756f066d5f4",
+            "location": [
+                {
+                    "page": 1,
+                    "bbox": [
+                        71.51421356201172,
+                        657.0866088867188,
+                        330.310791015625,
+                        718.751220703125
+                    ]
+                },
+                {
+                    "page": 2,
+                    "bbox": [
+                        99.74747467041016,
+                        70.54546356201172,
+                        538.9876708984375,
+                        709.2515258789062
+                    ]
+                },
+                {
+                    "page": 3,
+                    "bbox": [
+                        99.79295349121094,
+                        71.22254943847656,
+                        463.8907775878906,
+                        206.7315673828125
+                    ]
+                }
+            ]
+        },
+        "content": "Thông tin chung về công ty FPT Smart Cloud (FCI)\n2. Định hướng phát triển và tầm nhìn chiến lược\nMục tiêu của FPT Smart Cloud là tự cường công nghệ Việt, trí tuệ Việt, ứng dụng sức mạnh của công nghệ biến mọi doanh nghiệp Việt Nam thành doanh nghiệp số.\nĐể đạt được mục tiêu trên, FPT Smart Cloud xây dựng các chương trình hành động cân bằng, toàn diện ở cả ba khía cạnh kinh doanh, công nghệ và con người.\n2.1. Kinh doanh\nChúng tôi mở rộng/thúc đẩy cung cấp dịch vụ, giải pháp chuyển đổi số toàn diện từ khâu tư vấn đến triển khai, tích hợp trên nền tảng giao diện đồng nhất, có khả năng kết nối mở rộng nhằm tối ưu vận hành.\n2.2. Công nghệ\nChúng tôi tiếp cận và làm chủ những xu hướng công nghệ mới nhất, phát triển các nền tảng công nghệ lõi và gia tăng trải nghiệm khách hàng, hiệu quả vận hành dựa trên công nghệ.\n2.3. Con người\nChúng tôi tiếp cận và làm chủ những xu hướng công nghệ mới nhất, phát triển các nền tảng công nghệ lõi và gia tăng trải nghiệm khách hàng, hiệu quả vận hành dựa trên công nghệ."
+    },
+    {
+        "nodes": [
+            {
+                "name": "FPT Smart Cloud",
+                "type": "company"
+            },
+            {
+                "name": "Nguyễn Thế Phương",
+                "type": "person"
+            },
+            {
+                "name": "Lê Hồng Việt",
+                "type": "person"
+            },
+            {
+                "name": "Nguyễn Ngọc Minh",
+                "type": "person"
+            }
+        ],
+        "relationships": [
+            {
+                "source": {
+                    "name": "FPT Smart Cloud",
+                    "type": "company"
+                },
+                "target": {
+                    "name": "Nguyễn Thế Phương",
+                    "type": "person"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Nguyễn Thế Phương làm Chủ tịch hội đồng quản trị của công ty FPT Smart Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "FPT Smart Cloud",
+                    "type": "company"
+                },
+                "target": {
+                    "name": "Lê Hồng Việt",
+                    "type": "person"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Lê Hồng Việt giữ chức Tổng giám đốc tại công ty FPT Smart Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "FPT Smart Cloud",
+                    "type": "company"
+                },
+                "target": {
+                    "name": "Nguyễn Ngọc Minh",
+                    "type": "person"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Nguyễn Ngọc Minh đảm nhiệm vị trí Phó tổng giám đốc của công ty FPT Smart Cloud."
+                }
+            }
+        ],
+        "metadata": {
+            "document_id": "06627b38-7b21-4291-acf7-0ef1b03771c8",
+            "tenant_id": "22f29fee-b631-435d-8486-5756f066d5f4",
+            "location": [
+                {
+                    "page": 1,
+                    "bbox": [
+                        71.51421356201172,
+                        657.0866088867188,
+                        330.310791015625,
+                        718.751220703125
+                    ]
+                },
+                {
+                    "page": 2,
+                    "bbox": [
+                        99.74747467041016,
+                        70.54546356201172,
+                        538.9876708984375,
+                        709.2515258789062
+                    ]
+                },
+                {
+                    "page": 3,
+                    "bbox": [
+                        99.79295349121094,
+                        71.22254943847656,
+                        463.8907775878906,
+                        206.7315673828125
+                    ]
+                }
+            ]
+        },
+        "content": "Thông tin chung về công ty FPT Smart Cloud (FCI)\n3. Đội ngũ lãnh đạo\n• Chủ tịch hội đồng quản trị: Ông Nguyễn Thế Phương\n• Tổng giám đốc: Ông Lê Hồng Việt\n• Phó tổng giám đốc: Ông Nguyễn Ngọc Minh"
+    },
+    {
+        "nodes": [
+            {
+                "name": "FPT Smart Cloud",
+                "type": "company"
+            },
+            {
+                "name": "Lê Hồng Việt",
+                "type": "person"
+            },
+            {
+                "name": "Nguyễn Ngọc Minh",
+                "type": "person"
+            },
+            {
+                "name": "Đoàn Đăng Khoa",
+                "type": "person"
+            },
+            {
+                "name": "Trần Thế Trung",
+                "type": "person"
+            },
+            {
+                "name": "Ngô Xuân Bách",
+                "type": "person"
+            },
+            {
+                "name": "Vũ Hải Yến",
+                "type": "person"
+            },
+            {
+                "name": "Hoàng Danh Liêm",
+                "type": "person"
+            },
+            {
+                "name": "Hồ Minh Thắng",
+                "type": "person"
+            },
+            {
+                "name": "Phan Hồ Hà Phương",
+                "type": "person"
+            },
+            {
+                "name": "Phan Hồng Tâm",
+                "type": "person"
+            },
+            {
+                "name": "Lê Thanh Hải",
+                "type": "person"
+            },
+            {
+                "name": "Trần Huy Vũ",
+                "type": "person"
+            },
+            {
+                "name": "Đoàn Trọng Dũng",
+                "type": "person"
+            },
+            {
+                "name": "Nguyễn Đình Việt",
+                "type": "person"
+            },
+            {
+                "name": "Nguyễn Khương Duy",
+                "type": "person"
+            },
+            {
+                "name": "Vũ Quang Chiến",
+                "type": "person"
+            },
+            {
+                "name": "Đoàn Đăng Khoa",
+                "type": "person"
+            },
+            {
+                "name": "Dương Lê Minh Đức",
+                "type": "person"
+            },
+            {
+                "name": "Bùi Minh Tiến",
+                "type": "person"
+            },
+            {
+                "name": "Trần Đốc Công",
+                "type": "person"
+            },
+            {
+                "name": "Vũ Kiều Trang",
+                "type": "person"
+            },
+            {
+                "name": "Nguyễn Thị Hiếu",
+                "type": "person"
+            },
+            {
+                "name": "Lý Việt Thắng",
+                "type": "person"
+            },
+            {
+                "name": "Lê Nguyên Thảo",
+                "type": "person"
+            },
+            {
+                "name": "Nguyễn Ngọc Minh",
+                "type": "person"
+            },
+            {
+                "name": "Phan Thị Thu Hà",
+                "type": "person"
+            },
+            {
+                "name": "Đỗ Kim Hoa",
+                "type": "person"
+            },
+            {
+                "name": "Phan Thị Hải Sơn",
+                "type": "person"
+            },
+            {
+                "name": "Phan Thế Minh",
+                "type": "person"
+            },
+            {
+                "name": "Lê Đức An",
+                "type": "person"
+            },
+            {
+                "name": "Vũ Quang Chiến",
+                "type": "person"
+            },
+            {
+                "name": "Nguyễn Duy Định",
+                "type": "person"
+            },
+            {
+                "name": "Phạm Thị Nhung",
+                "type": "person"
+            },
+            {
+                "name": "Dự Án NCP",
+                "type": "division"
+            },
+            {
+                "name": "Khối sản phẩm AI",
+                "type": "division"
+            },
+            {
+                "name": "Khối Công nghệ Cloud",
+                "type": "division"
+            },
+            {
+                "name": "Khối Kinh Doanh",
+                "type": "division"
+            },
+            {
+                "name": "Khối Vận Hành",
+                "type": "division"
+            },
+            {
+                "name": "Trung tâm sản phẩm Conversation",
+                "type": "department"
+            },
+            {
+                "name": "Trung tâm sản phẩm Vision",
+                "type": "department"
+            },
+            {
+                "name": "Trung tâm sản phẩm GenAI",
+                "type": "department"
+            },
+            {
+                "name": "Phòng Tư vấn và Triển Khai AI",
+                "type": "department"
+            },
+            {
+                "name": "Phòng SWAT",
+                "type": "department"
+            },
+            {
+                "name": "Phòng Giải pháp AI",
+                "type": "department"
+            },
+            {
+                "name": "Trung Tâm Vận Hành Cloud",
+                "type": "department"
+            },
+            {
+                "name": "Phòng Tư Vấn & Triển Khai Cloud",
+                "type": "department"
+            },
+            {
+                "name": "Trung Tâm Phát Triển Dịch Vụ Hạ Tầng Cloud",
+                "type": "department"
+            },
+            {
+                "name": "Trung Tâm Phát Triển Dịch Vụ nền tảng Cloud",
+                "type": "department"
+            },
+            {
+                "name": "Trung Tâm Phát Triển Dịch Vụ Phần Mềm Cloud",
+                "type": "department"
+            },
+            {
+                "name": "Trung Tâm Kinh Doanh AI",
+                "type": "department"
+            },
+            {
+                "name": "Trung Tâm Kinh Doanh Cloud",
+                "type": "department"
+            },
+            {
+                "name": "Phòng Kinh Doanh CFS",
+                "type": "department"
+            },
+            {
+                "name": "Phòng Marketing",
+                "type": "department"
+            },
+            {
+                "name": "Phòng Nhân Sự",
+                "type": "department"
+            },
+            {
+                "name": "Phòng Tài Chính Kế Toán",
+                "type": "department"
+            },
+            {
+                "name": "Phòng Hành Chính",
+                "type": "department"
+            },
+            {
+                "name": "Phòng Quản Lý Chất Lượng",
+                "type": "department"
+            },
+            {
+                "name": "Phòng Phần Mềm CFS",
+                "type": "department"
+            },
+            {
+                "name": "Phòng Data Fusion",
+                "type": "department"
+            },
+            {
+                "name": "Phòng Phần Mềm Ứng Dụng",
+                "type": "department"
+            },
+            {
+                "name": "Phòng Chăm Sóc Khách Hàng",
+                "type": "department"
+            }
+        ],
+        "relationships": [
+            {
+                "source": {
+                    "name": "FPT Smart Cloud",
+                    "type": "company"
+                },
+                "target": {
+                    "name": "Khối sản phẩm AI",
+                    "type": "division"
+                },
+                "type": "HAS_DIVISION",
+                "properties": {
+                    "triplet_sentence": "Công ty FPT Smart Cloud có Khối sản phẩm AI."
+                }
+            },
+            {
+                "source": {
+                    "name": "FPT Smart Cloud",
+                    "type": "company"
+                },
+                "target": {
+                    "name": "Khối Công nghệ Cloud",
+                    "type": "division"
+                },
+                "type": "HAS_DIVISION",
+                "properties": {
+                    "triplet_sentence": "Công ty FPT Smart Cloud có Khối Công nghệ Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "FPT Smart Cloud",
+                    "type": "company"
+                },
+                "target": {
+                    "name": "Khối Kinh Doanh",
+                    "type": "division"
+                },
+                "type": "HAS_DIVISION",
+                "properties": {
+                    "triplet_sentence": "Công ty FPT Smart Cloud có Khối Kinh Doanh."
+                }
+            },
+            {
+                "source": {
+                    "name": "FPT Smart Cloud",
+                    "type": "company"
+                },
+                "target": {
+                    "name": "Khối Vận Hành",
+                    "type": "division"
+                },
+                "type": "HAS_DIVISION",
+                "properties": {
+                    "triplet_sentence": "Công ty FPT Smart Cloud có Khối Vận Hành."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối sản phẩm AI",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Trung tâm sản phẩm Conversation",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối sản phẩm AI có Trung tâm sản phẩm Conversation."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối sản phẩm AI",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Trung tâm sản phẩm Vision",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối sản phẩm AI có Trung tâm sản phẩm Vision."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối sản phẩm AI",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Trung tâm sản phẩm GenAI",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối sản phẩm AI có Trung tâm sản phẩm GenAI."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối sản phẩm AI",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Phòng Tư vấn và Triển Khai AI",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối sản phẩm AI có Phòng Tư vấn và Triển Khai AI."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối sản phẩm AI",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Phòng SWAT",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối sản phẩm AI có Phòng SWAT."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối sản phẩm AI",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Phòng Giải pháp AI",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối sản phẩm AI có Phòng Giải pháp AI."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối Công nghệ Cloud",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Trung Tâm Vận Hành Cloud",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối Công nghệ Cloud có Trung Tâm Vận Hành Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối Công nghệ Cloud",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Phòng Tư Vấn & Triển Khai Cloud",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối Công nghệ Cloud có Phòng Tư Vấn & Triển Khai Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối Công nghệ Cloud",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Trung Tâm Phát Triển Dịch Vụ Hạ Tầng Cloud",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối Công nghệ Cloud có Trung Tâm Phát Triển Dịch Vụ Hạ Tầng Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối Công nghệ Cloud",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Trung Tâm Phát Triển Dịch Vụ nền tảng Cloud",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối Công nghệ Cloud có Trung Tâm Phát Triển Dịch Vụ nền tảng Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối Công nghệ Cloud",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Trung Tâm Phát Triển Dịch Vụ Phần Mềm Cloud",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối Công nghệ Cloud có Trung Tâm Phát Triển Dịch Vụ Phần Mềm Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối Kinh Doanh",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Trung Tâm Kinh Doanh AI",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối Kinh Doanh có Trung Tâm Kinh Doanh AI."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối Kinh Doanh",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Trung Tâm Kinh Doanh Cloud",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối Kinh Doanh có Trung Tâm Kinh Doanh Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối Kinh Doanh",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Phòng Kinh Doanh CFS",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối Kinh Doanh có Phòng Kinh Doanh CFS."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối Kinh Doanh",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Phòng Marketing",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối Kinh Doanh có Phòng Marketing."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối Vận Hành",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Phòng Nhân Sự",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối Vận Hành có Phòng Nhân Sự."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối Vận Hành",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Phòng Tài Chính Kế Toán",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối Vận Hành có Phòng Tài Chính Kế Toán."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối Vận Hành",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Phòng Hành Chính",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối Vận Hành có Phòng Hành Chính."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối Vận Hành",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Phòng Quản Lý Chất Lượng",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối Vận Hành có Phòng Quản Lý Chất Lượng."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối Vận Hành",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Phòng Phần Mềm CFS",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối Vận Hành có Phòng Phần Mềm CFS."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối Vận Hành",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Phòng Data Fusion",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối Vận Hành có Phòng Data Fusion."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối Vận Hành",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Phòng Phần Mềm Ứng Dụng",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối Vận Hành có Phòng Phần Mềm Ứng Dụng."
+                }
+            },
+            {
+                "source": {
+                    "name": "Khối Vận Hành",
+                    "type": "division"
+                },
+                "target": {
+                    "name": "Phòng Chăm Sóc Khách Hàng",
+                    "type": "department"
+                },
+                "type": "HAS_DEPARTMENT",
+                "properties": {
+                    "triplet_sentence": "Khối Vận Hành có Phòng Chăm Sóc Khách Hàng."
+                }
+            },
+            {
+                "source": {
+                    "name": "Lê Hồng Việt",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Khối sản phẩm AI",
+                    "type": "division"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Lê Hồng Việt làm việc tại Khối sản phẩm AI."
+                }
+            },
+            {
+                "source": {
+                    "name": "Nguyễn Ngọc Minh",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Khối sản phẩm AI",
+                    "type": "division"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Nguyễn Ngọc Minh làm việc tại Khối sản phẩm AI."
+                }
+            },
+            {
+                "source": {
+                    "name": "Đoàn Đăng Khoa",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Khối sản phẩm AI",
+                    "type": "division"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Đoàn Đăng Khoa làm việc tại Khối sản phẩm AI."
+                }
+            },
+            {
+                "source": {
+                    "name": "Trần Thế Trung",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Khối sản phẩm AI",
+                    "type": "division"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Trần Thế Trung làm việc tại Khối sản phẩm AI."
+                }
+            },
+            {
+                "source": {
+                    "name": "Ngô Xuân Bách",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Khối sản phẩm AI",
+                    "type": "division"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Ngô Xuân Bách làm việc tại Khối sản phẩm AI."
+                }
+            },
+            {
+                "source": {
+                    "name": "Vũ Hải Yến",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Trung tâm sản phẩm Conversation",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Bà Vũ Hải Yến làm việc tại Trung tâm sản phẩm Conversation."
+                }
+            },
+            {
+                "source": {
+                    "name": "Hoàng Danh Liêm",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Trung tâm sản phẩm Vision",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Hoàng Danh Liêm làm việc tại Trung tâm sản phẩm Vision."
+                }
+            },
+            {
+                "source": {
+                    "name": "Ngô Xuân Bách",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Trung tâm sản phẩm GenAI",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Ngô Xuân Bách làm việc tại Trung tâm sản phẩm GenAI."
+                }
+            },
+            {
+                "source": {
+                    "name": "Hồ Minh Thắng",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Phòng Tư vấn và Triển Khai AI",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Hồ Minh Thắng làm việc tại Phòng Tư vấn và Triển Khai AI."
+                }
+            },
+            {
+                "source": {
+                    "name": "Trần Thế Trung",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Phòng SWAT",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Trần Thế Trung làm việc tại Phòng SWAT."
+                }
+            },
+            {
+                "source": {
+                    "name": "Phan Hồ Hà Phương",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Phòng Giải pháp AI",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Bà Phan Hồ Hà Phương làm việc tại Phòng Giải pháp AI."
+                }
+            },
+            {
+                "source": {
+                    "name": "Phan Hồng Tâm",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Khối Công nghệ Cloud",
+                    "type": "division"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Phan Hồng Tâm làm việc tại Khối Công nghệ Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "Lê Thanh Hải",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Khối Công nghệ Cloud",
+                    "type": "division"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Lê Thanh Hải làm việc tại Khối Công nghệ Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "Trần Huy Vũ",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Trung Tâm Vận Hành Cloud",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Trần Huy Vũ làm việc tại Trung Tâm Vận Hành Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "Đoàn Trọng Dũng",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Trung Tâm Vận Hành Cloud",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Đoàn Trọng Dũng làm việc tại Trung Tâm Vận Hành Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "Nguyễn Đình Việt",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Phòng Tư Vấn & Triển Khai Cloud",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Nguyễn Đình Việt làm việc tại Phòng Tư Vấn & Triển Khai Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "Nguyễn Khương Duy",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Trung Tâm Phát Triển Dịch Vụ Hạ Tầng Cloud",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Nguyễn Khương Duy làm việc tại Trung Tâm Phát Triển Dịch Vụ Hạ Tầng Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "Lê Thanh Hải",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Trung Tâm Phát Triển Dịch Vụ nền tảng Cloud",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Lê Thanh Hải làm việc tại Trung Tâm Phát Triển Dịch Vụ nền tảng Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "Vũ Quang Chiến",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Trung Tâm Phát Triển Dịch Vụ Phần Mềm Cloud",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Vũ Quang Chiến làm việc tại Trung Tâm Phát Triển Dịch Vụ Phần Mềm Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "Đoàn Đăng Khoa",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Khối Kinh Doanh",
+                    "type": "division"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Đoàn Đăng Khoa làm việc tại Khối Kinh Doanh."
+                }
+            },
+            {
+                "source": {
+                    "name": "Dương Lê Minh Đức",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Trung Tâm Kinh Doanh AI",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Dương Lê Minh Đức làm việc tại Trung Tâm Kinh Doanh AI."
+                }
+            },
+            {
+                "source": {
+                    "name": "Bùi Minh Tiến",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Trung Tâm Kinh Doanh Cloud",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Bùi Minh Tiến làm việc tại Trung Tâm Kinh Doanh Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "Trần Đốc Công",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Trung Tâm Kinh Doanh Cloud",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Trần Đốc Công làm việc tại Trung Tâm Kinh Doanh Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "Vũ Kiều Trang",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Trung Tâm Kinh Doanh Cloud",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Bà Vũ Kiều Trang làm việc tại Trung Tâm Kinh Doanh Cloud."
+                }
+            },
+            {
+                "source": {
+                    "name": "Nguyễn Thị Hiếu",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Phòng Kinh Doanh CFS",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Bà Nguyễn Thị Hiếu làm việc tại Phòng Kinh Doanh CFS."
+                }
+            },
+            {
+                "source": {
+                    "name": "Lý Việt Thắng",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Phòng Marketing",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Lý Việt Thắng làm việc tại Phòng Marketing."
+                }
+            },
+            {
+                "source": {
+                    "name": "Lê Nguyên Thảo",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Phòng Marketing",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Bà Lê Nguyên Thảo làm việc tại Phòng Marketing."
+                }
+            },
+            {
+                "source": {
+                    "name": "Nguyễn Ngọc Minh",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Khối Vận Hành",
+                    "type": "division"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Nguyễn Ngọc Minh làm việc tại Khối Vận Hành."
+                }
+            },
+            {
+                "source": {
+                    "name": "Phan Thị Thu Hà",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Phòng Nhân Sự",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Bà Phan Thị Thu Hà làm việc tại Phòng Nhân Sự."
+                }
+            },
+            {
+                "source": {
+                    "name": "Đỗ Kim Hoa",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Phòng Tài Chính Kế Toán",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Bà Đỗ Kim Hoa làm việc tại Phòng Tài Chính Kế Toán."
+                }
+            },
+            {
+                "source": {
+                    "name": "Phan Thị Hải Sơn",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Phòng Hành Chính",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Bà Phan Thị Hải Sơn làm việc tại Phòng Hành Chính."
+                }
+            },
+            {
+                "source": {
+                    "name": "Phan Thế Minh",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Phòng Quản Lý Chất Lượng",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Phan Thế Minh làm việc tại Phòng Quản Lý Chất Lượng."
+                }
+            },
+            {
+                "source": {
+                    "name": "Lê Đức An",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Phòng Phần Mềm CFS",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Lê Đức An làm việc tại Phòng Phần Mềm CFS."
+                }
+            },
+            {
+                "source": {
+                    "name": "Vũ Quang Chiến",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Phòng Data Fusion",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Vũ Quang Chiến làm việc tại Phòng Data Fusion."
+                }
+            },
+            {
+                "source": {
+                    "name": "Nguyễn Duy Định",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Phòng Phần Mềm Ứng Dụng",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Ông Nguyễn Duy Định làm việc tại Phòng Phần Mềm Ứng Dụng."
+                }
+            },
+            {
+                "source": {
+                    "name": "Phạm Thị Nhung",
+                    "type": "person"
+                },
+                "target": {
+                    "name": "Phòng Chăm Sóc Khách Hàng",
+                    "type": "department"
+                },
+                "type": "WORK_IN",
+                "properties": {
+                    "triplet_sentence": "Bà Phạm Thị Nhung làm việc tại Phòng Chăm Sóc Khách Hàng."
+                }
+            }
+        ],
+        "metadata": {
+            "document_id": "06627b38-7b21-4291-acf7-0ef1b03771c8",
+            "tenant_id": "22f29fee-b631-435d-8486-5756f066d5f4",
+            "location": [
+                {
+                    "page": 1,
+                    "bbox": [
+                        71.51421356201172,
+                        657.0866088867188,
+                        330.310791015625,
+                        718.751220703125
+                    ]
+                },
+                {
+                    "page": 2,
+                    "bbox": [
+                        99.74747467041016,
+                        70.54546356201172,
+                        538.9876708984375,
+                        709.2515258789062
+                    ]
+                },
+                {
+                    "page": 3,
+                    "bbox": [
+                        99.79295349121094,
+                        71.22254943847656,
+                        463.8907775878906,
+                        206.7315673828125
+                    ]
+                }
+            ]
+        },
+        "content": "Thông tin chung về công ty FPT Smart Cloud (FCI)\n4. Sơ đồ tổ chức FPT Smart Cloud (FCI)\n4.1. Ban tổng giám đốc\n- Tổng Giám đốc: Ông Lê Hồng Việt\n- Phó Tổng giám đốc: Ông Nguyễn Ngọc Minh\n- Phó Tổng giám đốc: Ông Đoàn Đăng Khoa\n4.2. Khối sản phẩm AI\n- Giám đốc Khối sản phẩm AI: Ông Lê Hồng Việt\n- Phó Giám đốc khối sản phẩm AI: Ông Trần Thế Trung\n- Phó Giám đốc khối sản phẩm AI: Ngô Xuân Bách\nCác phòng ban:\n- Trung tâm sản phẩm Conversation: Giám đốc Trung tâm - Vũ Hải Yến\n- Trung tâm sản phẩm Vision: Giám đốc Trung tâm - Hoàng Danh Liêm\n- Trung tâm sản phẩm GenAI: Giám đốc Trung tâm - Ngô Xuân Bách\n- Phòng Tư vấn và Triển Khai AI: Trưởng phòng - Hồ Minh Thắng\n- Phòng SWAT: Trưởng phòng - Trần Thế Trung\n- Phòng Giải pháp AI: Trưởng phòng - Phan Hồ Hà Phương\n4.3. Khối Công nghệ Cloud\n- Giám đốc Khối: Phan Hồng Tâm\n- Phó Giám đốc Khối: Lê Thanh Hải\nCác phòng ban:\n- Trung Tâm Vận Hành Cloud:\no Giám đốc Trung tâm: Trần Huy Vũ\no Phó Giám đốc Trung tâm: Đoàn Trọng Dũng\n- Phòng Tư Vấn & Triển Khai Cloud: Trưởng Phòng - Nguyễn Đình Việt\n- Trung Tâm Phát Triển Dịch Vụ Hạ Tầng Cloud: Giám đốc Trung tâm - Nguyễn Khương Duy\n- Trung Tâm Phát Triển Dịch Vụ nền tảng Cloud: Giám đốc Trung tâm - Lê Thanh Hải\n- Trung Tâm Phát Triển Dịch Vụ Phần Mềm Cloud: Giám đốc Trung tâm - Vũ Quang Chiến\n4.4. Khối Kinh Doanh:\n- Giám đốc Khối: Đoàn Đăng Khoa Các phòng ban:\nCác phòng ban:\n- Trung Tâm Kinh Doanh AI: Giám đốc Trung tâm - Dương Lê Minh Đức\n- Trung Tâm Kinh Doanh Cloud:\no Giám đốc Trung tâm: Bùi Minh Tiến\no Phó Giám đốc Trung tâm: Trần Đốc Công\no Phó Giám đốc Trung tâm: Vũ Kiều Trang\n- Phòng Kinh Doanh CFS: Trưởng phòng - Nguyễn Thị Hiếu\n- Phòng Marketing:\no Trưởng phòng: Lý Việt Thắng\no Phó Phòng: Lê Nguyên Thảo\n4.5. Khối Vận Hành:\n- Giám đốc Khối vận hành: Nguyễn Ngọc Minh Các phòng ban:\nCác phòng ban:\n- Phòng Nhân Sự: Trưởng phòng - Phan Thị Thu Hà\n- Phòng Tài Chính Kế Toán: Kế toán trưởng - Đỗ Kim Hoa\n- Phòng Hành Chính: Trưởng phòng - Phan Thị Hải Sơn\n- Phòng Quản Lý Chất Lượng: Trưởng phòng - Phan Thế Minh\n- Phòng Phần Mềm CFS: Trưởng phòng - Lê Đức An\n- Phòng Data Fusion: Trưởng phòng - Vũ Quang Chiến\n- Phòng Phần Mềm Ứng Dụng: Trưởng phòng - Nguyễn Duy Định\n- Phòng Chăm Sóc Khách Hàng: Trưởng phòng - Phạm Thị Nhung\n4.6. Dự Án NCP:\n- Quản Trị Dự Án: Trịnh Thị Thanh Hải"
+    }
+]

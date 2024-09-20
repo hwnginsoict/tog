@@ -190,7 +190,13 @@ def if_finish_list(lst):
 
 
 def prepare_dataset(dataset_name):
-    if dataset_name == 'cwq':
+    if dataset_name == 'myself': #@
+        with open('F:\\CodingEnvironment\\tog\\graph.json',encoding='utf-8') as f:
+            datas = json.load(f)
+        question_string = 'question' #@ tu generate cau hoi
+
+
+    elif dataset_name == 'cwq':
         with open('F:\\CodingEnvironment\\tog\\data\\cwq.json',encoding='utf-8') as f:
             datas = json.load(f)
         question_string = 'question'

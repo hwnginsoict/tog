@@ -39,7 +39,7 @@ if __name__ == '__main__':
     # args = parser.parse_args()
 
     args_dict = {
-        "dataset": "cwq",
+        "dataset": "myself",
         "max_length": 256,
         "temperature_exploration": 0.4,
         "temperature_reasoning": 0,
@@ -55,7 +55,7 @@ if __name__ == '__main__':
     args = argparse.Namespace(**args_dict)
 
 
-    datas, question_string = prepare_dataset(args.dataset)
+    datas, question_string = prepare_dataset(args.dataset) #@
     print("Start Running ToG on %s dataset." % args.dataset)
     for data in tqdm(datas):
         question = data[question_string]
