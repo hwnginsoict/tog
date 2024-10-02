@@ -120,7 +120,7 @@ Q: {}
 Relation: {}
 Entites: """
 
-prompt_evaluate_wiki="""Given a question and the associated retrieved knowledge graph triplets (entity, relation, entity), you are asked to answer whether it's sufficient for you to answer the question with these triplets and your knowledge (Yes or No).
+prompt_evaluate_wiki="""Given a question and the associated retrieved knowledge graph triplets (entity, relation, entity) or (entity with relation, entity), make sure that the triplet will have close relationship as work at ..., you are asked to answer whether it's sufficient for you to answer the question with these triplets and your knowledge (Yes or No).
 Q: Viscount Yamaji Motoharu was a general in the early Imperial Japanese Army which belonged to which Empire?
 Knowledge Triplets: Imperial Japanese Army, allegiance, Emperor of Japan
 Yamaji Motoharu, allegiance, Emperor of Japan

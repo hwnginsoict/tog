@@ -11,6 +11,9 @@ import os
 # Load the .env file
 load_dotenv()
 
+# -*- coding: utf-8 -*-
+
+
 
 if __name__ == '__main__':
     # parser = argparse.ArgumentParser()
@@ -56,15 +59,23 @@ if __name__ == '__main__':
 
 
     datas, question_string = prepare_dataset(args.dataset) #@
+
     print("Start Running ToG on %s dataset." % args.dataset)
     for data in tqdm(datas):
         question = data[question_string]
         topic_entity = data['topic_entity']
         cluster_chain_of_entities = []
+
+        # results = generate_without_explored_paths(question, args)
+        # save_2_jsonl(question, results, [], file_name=args.dataset)
+        # raise Exception
+
         if len(topic_entity) == 0:
             results = generate_without_explored_paths(question, args)
             save_2_jsonl(question, results, [], file_name=args.dataset)
             continue
+        
+
         pre_relations = []
         pre_heads= [-1] * len(topic_entity)
         flag_printed = False
@@ -73,7 +84,7 @@ if __name__ == '__main__':
             i=0
             for entity in topic_entity:
                 if entity!="[FINISH_ID]":
-                    retrieve_relations_with_scores = relation_search_prune(entity, topic_entity[entity], pre_relations, pre_heads[i], question, args)  # best entity triplet, entitiy_id
+                    retrieve_relations_with_scores = relation_search_prune(entity, topic_entity[entity], pre_relations, pre_heads[i], question, args) #@ create all search prune (remove)  # best entity triplet, entitiy_id
                     current_entity_relations_list.extend(retrieve_relations_with_scores)
                 i+=1
             total_candidates = []

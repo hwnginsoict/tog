@@ -15,15 +15,15 @@ from multiprocessing import Queue, Process
 from pathlib import Path
 import time
 
-from simple_wikidata_db.preprocess_utils.reader_process import count_lines, read_data
-from simple_wikidata_db.preprocess_utils.worker_process import process_data
-from simple_wikidata_db.preprocess_utils.writer_process import write_data
+from preprocess_utils.reader_process import count_lines, read_data
+from preprocess_utils.worker_process import process_data
+from preprocess_utils.writer_process import write_data
 
 
 def get_arg_parser():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input_file', type=str, required=True, help='path to gz wikidata json dump')
-    parser.add_argument('--out_dir', type=str, required=True, help='path to output directory')
+    parser.add_argument('--input_file', type=str, default='F:\\CodingEnvironment\\tog\\fci_graph.json', help='path to gz wikidata json dump')
+    parser.add_argument('--out_dir', type=str, default = 'F:\\CodingEnvironment\\tog\\', help='path to output directory')
     parser.add_argument('--language_id', type=str, default='en', help='language identifier')
     parser.add_argument('--processes', type=int, default=90, help="number of concurrent processes to spin off. ")
     parser.add_argument('--batch_size', type=int, default=10000)

@@ -933,7 +933,7 @@
                 },
                 "type": "WORK_IN",
                 "properties": {
-                    "triplet_sentence": "Ông Lê Hồng Việt làm việc tại Khối sản phẩm AI."
+                    "triplet_sentence": "Ông Lê Hồng Việt làm giám đốc tại Khối sản phẩm AI. Lê Hồng Việt is deputy director of Khối sản phẩm AI"
                 }
             },
             {
@@ -989,7 +989,7 @@
                 },
                 "type": "WORK_IN",
                 "properties": {
-                    "triplet_sentence": "Ông Ngô Xuân Bách làm việc tại Khối sản phẩm AI."
+                    "triplet_sentence": "Ông Ngô Xuân Bách làm phó giám đốc tại Khối sản phẩm AI."
                 }
             },
             {

@@ -1,0 +1,15 @@
+[
+    {
+        "ID": "",
+        "compositionality_type": "",
+        "created": "",
+        "machine_question": "Ai là phó giám đốc khối của trung tâm của Vũ Hải Yến?",
+        "question": "Ai là phó giám đốc tại khối chủ quản của trung tâm của Vũ Hải Yến?",
+        "sparql": "",
+        "webqsp_ID": "",
+        "webqsp_question": "Ai là phó giám đốc tại khối Sản phẩm AI?",
+        "topic_entity": ["Vũ Hải Yến"],
+        "answer": "",
+        "qid_topic_entity": ["Vũ Hải Yến"]
+    }
+]

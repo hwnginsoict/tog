@@ -1,12 +1,15 @@
-from prompt_list import *
+from prompt_list_vi import *
 import json
 import time
 import openai
+from openai import OpenAI
 import re
-from prompt_list import *
 from rank_bm25 import BM25Okapi
 from sentence_transformers import util
 from sentence_transformers import SentenceTransformer
+
+# -*- coding: utf-8 -*-
+
 
 def retrieve_top_docs(query, docs, model, width=3):
     """
@@ -106,29 +109,39 @@ def clean_relations_bm25_sent(topn_relations, topn_scores, entity_id, head_relat
 def run_llm(prompt, temperature, max_tokens, opeani_api_keys, engine="gpt-3.5-turbo"):
     if "llama" in engine.lower():
         openai.api_key = "EMPTY"
-        openai.api_base = "http://localhost:8000/v1"  # your local llama server port
+        # openai.api_base = "http://localhost:8000/v1"  # your local llama server port
         engine = openai.Model.list()["data"][0]["id"]
     else:
         openai.api_key = opeani_api_keys
 
-    messages = [{"role":"system","content":"You are an AI assistant that helps people find information."}]
+    messages = [{"role":"system","content":"Bạn là trợ lý AI giúp mọi người tìm kiếm thông tin."}]
     message_prompt = {"role":"user","content":prompt}
     messages.append(message_prompt)
     f = 0
     while(f == 0):
-        try:
-            response = openai.ChatCompletion.create(
+        if True:
+            # response = openai.ChatCompletion.create(
+            #         model=engine,
+            #         messages = messages,
+            #         temperature=temperature,
+            #         max_tokens=max_tokens,
+            #         frequency_penalty=0,
+            #         presence_penalty=0)
+
+            response = OpenAI(api_key=openai.api_key).chat.completions.create(
                     model=engine,
                     messages = messages,
                     temperature=temperature,
                     max_tokens=max_tokens,
                     frequency_penalty=0,
                     presence_penalty=0)
-            result = response["choices"][0]['message']['content']
+
+            result = response.choices[0].message.content
             f = 1
-        except:
-            print("openai error, retry")
-            time.sleep(2)
+        # except:
+        #     print("openai error, retry")
+        #     time.sleep(2)
+    print(result)
     return result
 
     
@@ -155,8 +168,10 @@ def clean_scores(string, entity_candidates):
 
 def save_2_jsonl(question, answer, cluster_chain_of_entities, file_name):
     dict = {"question":question, "results": answer, "reasoning_chains": cluster_chain_of_entities}
-    with open("ToG_{}.jsonl".format(file_name), "a") as outfile:
-        json_str = json.dumps(dict)
+    print(question)
+    print(answer)
+    with open("ToG_{}.jsonl".format(file_name), "a", encoding="utf-8") as outfile:
+        json_str = json.dumps(dict,  ensure_ascii=False)
         outfile.write(json_str + "\n")
 
     
@@ -191,9 +206,11 @@ def if_finish_list(lst):
 
 def prepare_dataset(dataset_name):
     if dataset_name == 'myself': #@
-        with open('F:\\CodingEnvironment\\tog\\graph.json',encoding='utf-8') as f:
+        with open('F:\\CodingEnvironment\\tog\\fci_question.json',encoding='utf-8') as f:
             datas = json.load(f)
         question_string = 'question' #@ tu generate cau hoi
+
+
 
 
     elif dataset_name == 'cwq':
