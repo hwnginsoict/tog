@@ -1,3 +1,15 @@
+extract_question_entity = """Hãy trích xuất tất cả các thực thể có tên riêng trong câu hỏi sau. Các thực thể có thể bao gồm tên người, tổ chức, địa danh, quốc gia, hay các thực thể khác. Nếu có tên riêng chỉ trích xuất tên riêng.
+
+Câu hỏi: {}
+
+Ví dụ:
+Câu hỏi: "Lê Hồng Việt là ai và vai trò của ông trong Khối sản phẩm AI của công ty FPT Smart Cloud là gì?"
+Thực thể: {Lê Hồng Việt, Khối sản phẩm AI, FPT Smart Cloud}
+
+Hãy trích xuất thực thể từ câu hỏi: {}
+Thực thể:
+"""
+
 extract_relation_prompt = """Vui lòng trích xuất %s relation (phân cách bằng dấu chấm phẩy) có liên quan đến câu hỏi và đánh giá mức độ đóng góp của chúng trên thang Score từ 0 đến 1 (tổng Score của %s relation là 1).
 Q: Tên của tổng thống của quốc gia mà ngôn ngữ chính được nói là Brahui vào năm 1980?
 entity chủ đề: Ngôn ngữ Brahui

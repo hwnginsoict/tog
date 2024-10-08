@@ -5,6 +5,19 @@ import re
 import time
 from utils import *
 
+def extract_entity_question(question, args):
+    prompt = extract_question_entity + question
+
+    response = run_llm(prompt, args.temperature_reasoning, args.max_length, args.opeani_api_keys, args.LLM_type)
+    
+    result = extract_answer(response)
+    
+    entities_list = [entity.strip() for entity in re.split(r',\s*', result) if entity]
+
+    # print(entities_list)
+    # raise Exception("stop")
+    return entities_list
+
 def transform_relation(relation):
     relation_without_prefix = relation.replace("wiki.relation.", "").replace("_", " ")
     return relation_without_prefix

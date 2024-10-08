@@ -65,7 +65,7 @@ if __name__ == '__main__':
     print("Start Running ToG on %s dataset." % args.dataset)
     for data in tqdm(datas):
         question = data[question_string]
-        topic_entity = data['qid_topic_entity']
+        topic_entity = extract_entity_question(question,args)
         cluster_chain_of_entities = []
         if len(topic_entity) == 0:
             results = generate_without_explored_paths(question, args)

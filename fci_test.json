@@ -1,0 +1,15 @@
+[
+    {
+        "ID": "",
+        "compositionality_type": "",
+        "created": "",
+        "machine_question": "",
+        "question": "Những người nào chỉ làm ở phòng SWAT thuộc Khối sản phẩm AI, đừng liệt kê những người làm ở khối AI vì họ ở cấp cao?",
+        "sparql": "",
+        "webqsp_ID": "",
+        "webqsp_question": "",
+        "topic_entity": ["Khối sản phẩm AI"],
+        "answer": "",
+        "qid_topic_entity": ["Khối sản phẩm AI"]
+    }
+]

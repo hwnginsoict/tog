@@ -1,15 +1,16 @@
 [
+    
     {
         "ID": "",
         "compositionality_type": "",
         "created": "",
-        "machine_question": "Ai là phó giám đốc khối của trung tâm của Vũ Hải Yến?",
-        "question": "Ai là phó giám đốc tại khối chủ quản của trung tâm của Vũ Hải Yến?",
+        "machine_question": "",
+        "question": "Ngô Xuân Bách có phải lãnh đạo cấp trên của Vũ Hải Yến không nhỉ?",
         "sparql": "",
         "webqsp_ID": "",
-        "webqsp_question": "Ai là phó giám đốc tại khối Sản phẩm AI?",
-        "topic_entity": ["Vũ Hải Yến"],
+        "webqsp_question": "",
+        "topic_entity": [""],
         "answer": "",
-        "qid_topic_entity": ["Vũ Hải Yến"]
+        "qid_topic_entity": [""]
     }
 ]
