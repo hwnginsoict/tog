@@ -1,0 +1,91 @@
+question_id,file_name,question,ground_truth
+1,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2,Ai là chủ tịch hội đồng quản trị của FPT Smart Cloud,Ông Nguyễn Thế Phương
+2,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2,Tổng giám đốc công ty FPT Smart Cloud là ai,Ông Lê Hồng Việt
+3,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2,Ông Lý Việt Thắng làm gì ở FPT Smart Cloud,trưởng phòng marketing của FPT Smart Cloud
+4,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2,Cho tôi biết ai là phó giám đốc khối Công nghệ Cloud của FPT Smart Cloud,Phó Giám đốc Khối: Lê Thanh Hải và  Phó Giám đốc Khối: Vũ Quang Chiến
+5,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2,Khối vận hành của FPT Smart Cloud có những phòng ban nào,Các phòng ban: - Phòng Nhân Sự: Trưởng phòng - Phan Thị Thu Hà - Phòng Tài Chính Kế Toán: Kế toán trưởng - Đỗ Kim Hoa - Phòng Hành Chính: Trưởng phòng - Phan Thị Hải Sơn - Phòng Quản Lý Chất Lượng: Trưởng phòng - Phan Thế Minh - Phòng Phần Mềm CFS: Trưởng phòng - Lê Đức An - Phòng Data Fusion: Trưởng phòng - Vũ Quang Chiến - Phòng Phần Mềm Ứng Dụng: Trưởng phòng - Nguyễn Duy Định - Phòng Chăm Sóc Khách Hàng: Trưởng phòng - Phạm Thị Nhung
+6,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2,Đội ngũ lãnh đạo của FPT Smart Cloud có những ai,• Chủ tịch hội đồng quản trị: Ông Nguyễn Thế Phương • Tổng giám đốc: Ông Lê Hồng Việt • Phó tổng giám đốc: Ông Nguyễn Ngọc Minh
+7,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2,Tầm nhìn chiến lược của FPT Smart Cloud,"Tầm nhìn của FPT Smart Cloud là biến mọi doanh nghiệp trở thành doanh nghiệp số, bằng đột phá sáng tạo trong công nghệ và sản phẩm. Tiên phong nghiên cứu và phát triển các giải pháp chuyển đổi số toàn diện về Trí tuệ nhân tạo (AI) và Điện toán đám mây (Cloud), FPT Smart Cloud đồng hành cùng hàng ngàn doanh nghiệp chuyển đổi số thành công, tạo ra bước đột phá và tối ưu trong hiệu suất vận hành, mang trải nghiệm khách hàng lên tầm cao mới.
+FPT Smart Cloud sẽ trở thành nền tảng chuyển đổi số, tích hợp hệ sinh thái các công nghệ mới nhất trên thế giới phù hợp với những đặc thù của môi trường kinh doanh tại Việt Nam, để các doanh nghiệp Việt ứng dụng nhanh nhất, dễ dàng nhất."
+10,Giới_thiệu_FPT.AI,FPT AI là gì,"FPT AI là nền tảng trí tuệ nhân tạo toàn diện, cung cấp các giải pháp nhằm đơn giản hóa
+các tác vụ kinh doanh và hướng tới việc thay thế con người trong việc ra quyết định, từ đó
+tạo ra lợi thế cạnh tranh cho doanh nghiệp."
+11,Giới_thiệu_FPT.AI,Kể tên các ứng dụng của FPT AI,"FPT AI Chat: Nền tảng Hội thoại thông minh cho phép tạo lập và quản lý chatbot tự động giao tiếp hai chiều với khách hàng. • FPT AI Engage: Nền tảng Trợ lý Ảo tổng đài, thực hiện cuộc gọi tự động hai chiều với giọng nói tự nhiên, tích hợp trên kênh tổng đài. • FPT AI Read: Nền tảng nhận diện và trích xuất thông tin từ ảnh chụp (OCR) với khả năng xử lý đa dạng mọi loại văn bản. • FPT AI Enhance: Nền tảng cho phép tổng đài tự động toàn diện quy trình quản lý chất lượng và dễ dàng theo dõi các chỉ số chuyên sâu theo thời gian thực. • FPT AI eKYC: Khả năng định danh khách hàng hoàn chỉnh với nhiều cấp độ bảo mật, giúp tối đa hóa sự thuận tiện cho cả doanh nghiệp cung cấp dịch vụ và khách hàng sử dụng."
+12,Giới_thiệu_FPT.AI,FPT AI Chat khác gì FPT AI Engage,"FPT AI Chat: Nền tảng Hội thoại thông minh cho phép tạo lập và quản lý
+chatbot tự động giao tiếp hai chiều với khách hàng.
+• FPT AI Engage: Nền tảng Trợ lý Ảo tổng đài, thực hiện cuộc gọi tự động hai
+chiều với giọng nói tự nhiên, tích hợp trên kênh tổng đài"
+13,Giới_thiệu_FPT.AI,Mục tiêu của FPT AI là gì,"Nâng cao hiệu suất xử lý công việc, mang lại sự kết hợp hoàn hảo giữa người và máy. • Gắn kết khách hàng hiệu quả thông qua việc tiếp cận, tương tác và thu hút tối đa khách hàng. • Kiến tạo giá trị mới cho khách hàng thông qua việc thiết lập những trải nghiệm mới, thói quen sử dụng, tương tác mới giữa doanh nghiệp và người dùng cuối."
+14,Giới_thiệu_FPT.AI,Sản phẩm nền tảng nhận diện và trích xuất thông tin từ ảnh chụp là gì,FPT AI Read
+15,Giới_thiệu_FPT.AI,FPT AI eKYC có khả năng gì,"Khả năng định danh khách hàng hoàn chỉnh với nhiều cấp độ bảo mật, giúp tối đa hóa sự thuận tiện cho cả doanh nghiệp cung cấp dịch vụ và khách hàng sử dụng."
+16,Giới_thiệu_FPT.AI,Giải pháp FPT.AI được kì vọng thế nào,"Giải pháp FPT.AI kì vọng tạo đột phá trong hoạt động vận hành của doanh nghiệp thông qua việc tăng 80% năng suất, tiết kiệm 60% chi phí, tiết kiệm 90% thời gian. Qua thực tế triển khai cho nhiều khách hàng trong và ngoài nước, FPT.AI nhận được nhiều lời khen về chất lượng dịch vụ, đội ngũ phát triển và khả năng hợp tác giữa hai bên."
+19,Giới_thiệu_chung_về_TẬP_ĐOÀN_FPT,Liệt kê các công ty thành viên của tập đoàn FPT,Công ty TNHH Phần mềm FPT (FPT Software) • Công ty TNHH Hệ thống Thông tin FPT (FPT IS) • Công ty Cổ phần Viễn thông FPT (FPT Telecom) • Công ty Cổ phần Dịch vụ Trực tuyến FPT (FPT Online) • Công ty TNHH Giáo dục FPT (FPT Education) • Công ty TNHH Đầu tư FPT (FPT Investment) • Công ty TNHH FPT Smart Cloud (FPT Smart Cloud) • Công ty TNHH FPT Digital (FPT Digital)
+20,Giới_thiệu_chung_về_TẬP_ĐOÀN_FPT,Tập đoàn FPT có thuộc top 100 doanh nghiệp lớn nhất Việt Nam không,"Không. Top 500 doanh nghiệp lớn nhất Việt Nam theo bảng xếp hạng VNR500 (Từ năm
+2007 tới 2021)"
+21,Giới_thiệu_chung_về_TẬP_ĐOÀN_FPT,Kể tên một vài thành tựu mà FPT đã đạt được,FPT nằm trong Top 100 nhà cung cấp dịch vụ ủy thác (IAOP) (năm 2014) • FPT nằm trong Top 300 công ty châu Á có hoạt động kinh doanh tốt nhất (năm 2015) • FPT nằm trong Top 130 công ty có môi trường làm việc tốt nhất khu vực châu Á (năm 2018)
+24,Giới_thiệu_chung_về_TẬP_ĐOÀN_FPT,Lĩnh vực hoạt động chính của FPT,"Công nghệ: bao gồm Tư vấn chuyển đổi số; Phát triển phần mềm; Tích hợp hệ thống; và Dịch vụ CNTT. • Viễn thông: bao gồm Dịch vụ viễn thông; [Truyền hình FPT] và Nội dung số • Giáo dục: từ tiểu học đến sau đại học, liên kết quốc tế và đào tạo trực tuyến."
+29,Giới_thiệu_chung_về_TẬP_ĐOÀN_FPT,Công ty liên kết của FPT là,Công ty Cổ phần Synnex FPT (Synnex FPT) • Công ty Cổ phần Bán lẻ Kỹ thuật số FPT (FPT Retail)
+46,Giới_thiệu_FPT.AI,FPT.AI được kì vọng tiết kiệm 80% chi phí phải không,"Không, chỉ 60%"
+47,Giới_thiệu_FPT.AI,FPT AI cung cấp mấy giải pháp,"5 giải pháp, đó là: FPT AI Chat, FPT AI Engage, FPT AI Read, FPT AI Enhance, FPT AI eKYC"
+48,Giới_thiệu_FPT.AI,Giải pháp nào của FPT AI có giọng nói,"FPT AI Engage: Nền tảng Trợ lý Ảo tổng đài, thực hiện cuộc gọi tự động hai chiều với giọng nói tự nhiên, tích hợp trên kênh tổng đài và FPT AI Enhance: Nền tảng cho phép tổng đài tự động toàn diện quy trình 
+quản lý chất lượng và dễ dàng theo dõi các chỉ số chuyên sâu theo thời gian 
+thực"
+49,Giới_thiệu_FPT.AI,FPT AI Enhance và Engage khác gì nhau,"FPT AI Enhance: Nền tảng cho phép tổng đài tự động toàn diện quy trình quản lý chất lượng và dễ dàng theo dõi các chỉ số chuyên sâu theo thời gian thực, trong khi FPT AI Engage không hỗ trợ phân tích các chỉ số"
+50,Giới_thiệu_FPT.AI,FPT AI eKYC dùng để làm gì,Giúp định danh khách hàng hoàn chỉnh với nhiều cấp độ bảo mật
+58,Giới_thiệu_FPT.AI,FPT AI mang lợi ích gì tới với các doanh nghiệp?,"Những giải pháp về Trí tuệ nhân tạo của FPTAI đem đến sẽ giúp doanh nghiệp đổi mới mô hình kinh doanh, đột phá về năng suất và hiệu suất vận hành thông qua ứng dụng các giải pháp của FPT.AI"
+73,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,FPT smart cloud có những khối nào?,"FPT smart cloud gồm các khối:
+- Khối sản phẩm AI
+- Khối công nghệ Cloud
+- Khối kinh doanh
+- Khối vận hành
+- Dự án NCP"
+74,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Ai là giám đốc khối vận hành ?,Ông Nguyễn Ngọc Minh
+75,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Kế toán trưởng của Công ty FPT smart Cloud là ai,Phòng Tài Chính KếToán: Kếtoán trưởng -ĐỗKim Hoa
+76,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Khối Kinh doanh có những phòng ban nào?,"Khối Kinh Doanh:
+Các phòng ban:
+-Trung Tâm Kinh Doanh AI
+-Trung Tâm Kinh Doanh Cloud
+-Phòng Kinh Doanh CFS
+-Phòng Marketing"
+77,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Ai là giám đốc trung tâm sản phẩm GenAI,Ông Ngô Xuân Bách
+78,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Sứ mệnh của FPT smart cloud?,"FPT Smart Cloud ra đời với sứ mệnh giúp các doanh nghiệp chuyển đổi sốlinh hoạt, sáng tạo và tạo ra bước đột phá trong hoạt động vận hành với các dịch vụđẳng cấp thế giới"
+79,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Ông Trần Thế Trung giữ chức vụ gì?,Ông Trần Thế Trung giữ chức vụ Phó giám đốc khối sản phẩm AI và Trường phòng - Phòng SWAT
+80,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Khối công nghệ Cloud có bao nhiêu phòng ban?,"Khối Công Nghệ Cloud gồm 5 phòng ban:
+-Trung Tâm Vận Hành Cloud
+-Phòng Tư Vấn & Triển Khai Cloud
+-Trung Tâm Phát Triển Dịch VụHạTầngCloud
+-Trung Tâm Phát Triển Dịch Vụnền tảng Cloud
+-Trung Tâm Phát Triển Dịch VụPhần Mềm Cloud"
+81,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,ai là giám đốc khổi Công nghệ Cloud,Ông Phan Hồng Tâm
+82,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Ai là giám đốc trung tâm Vận Hành Cloud,Ông Trần Huy Vũ
+83,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Ông Nguyễn Ngọc Minh giữ chức vụ gì,Ông Nguyễn Ngọc Minh giữ chức vụ phó tổng giám đốc công ty FPT smart cloud và Giám đốc khối vận hành
+84,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Ai là trưởng phòng nhân sự?,Bà Phan Thị Thu Hà
+85,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Trưởng phòng hành chính là ai?,Bà Phan Thị Hải Sơn
+86,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Khối vận hành gồm những phòng ban nào?,"Khối vận hành gồm:
+- Phòng Nhân sự
+- Phòng tài chính kế toán
+- Phòng Hành Chính
+- Phòng quản lí chất lượng
+- Phòng phần mềm CFS
+- Phòng Data Fusion
+- Phòng phần mềm ứng dụng
+- Phòng chăm sóc khách hàng"
+87,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,bà Trịnh Thị Thanh Hải giữ chức vụ gì,Bà Trịnh Thị Thanh Hải là quản trị dự án dự án NCP
+88,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Ai là giám đốc khối kinh doanh?,Ông Đoàn Đăng Khoa
+89,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Ông Đoàn Đăng Khoa giữ chức vụ gì,Ông Đoàn Đăng Khoa giữ chức vụ phó tổng giám đốc công ty FPT smart cloud và Giám đốc khối kinh doanh
+90,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Ông Ngô Xuân Bách giữ chức vụ gì?,Ông Ngô Xuân bách giữ chức vụ Phó giám đốc khối AI và Giám đốc trung tâm sản phẩm GenAI
+91,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Ai là Giám đốc trung tâm sản phẩm Conversation,Bà Vũ Hải Yến
+92,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Ông Lê Hồng Việt giữ chức vụ gì?,Ông Lê Hồng Việt giữ chức vụ Tổng giám đốc công ty FPT smart cloud đồng thời là fiasm đốc khối sản phẩm AI
+93,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Khối sản phẩm AI và khối công nghệ Cloud khối nào có nhiều phòng ban hơn?,Kh ối sản phẩm AI có nhiều phòng ban hơn khối công nghệ Cloud. Khối sản phẩm AI có 6 phòng ban còn khối công nghệ Cloud có 5 phòng ban
+94,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Khối sản phẩm AI có những phòng ban nào?,"Khối sản phẩm AI Các phòng ban:
+-Trung tâm sản phẩm Conversation
+-Trung tâm sản phẩm Vision
+-Trung tâm sản phẩm GenAI
+-Phòng Tư vấn và Triển Khai AI
+-Phòng SWAT
+-Phòng Giải pháp AI"
+95,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,Đội ngũ lãnh đạo của FPT smart cloud có những ai?,"Đội ngũ lãnh đạo
+•Chủtịch hội đồng quản trị: Ông Nguyễn ThếPhương
+•Tổng giám đốc: Ông Lê Hồng Việt
+•Phó tổng giám đốc: Ông Nguyễn Ngọc Minh"
+100,Thông_tin_chung_về_công_ty_FPT_Smart_Cloud_2.pdf,FPT Smart Cloud có quan hệ thế nào với tập đoàn FPT?,"FPT Smart Cloud –thành viên Tập đoàn FPT, cung cấp giải pháp ứng dụng Trí tuệnhân tạo (AI) & Điện toán đám mây (Cloud Computing) hàng đầu tại Việt Nam"

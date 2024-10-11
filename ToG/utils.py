@@ -1,5 +1,6 @@
 from prompt_list_vi import *
 import json
+import pandas as pd
 import time
 import openai
 from openai import OpenAI
@@ -209,6 +210,9 @@ def prepare_dataset(dataset_name):
             datas = json.load(f)
         question_string = 'question' #@ tu generate cau hoi
 
+    elif dataset_name == 'fci': #@
+        datas = pd.read_csv('F:\\CodingEnvironment\\tog\\ToG\\questions_filtered.csv')
+        question_string = 'question' #@ tu generate cau hoi
 
 
 

@@ -120,57 +120,93 @@ def construct_entity_score_prompt(question, relation, entity_candidates):
     return score_entity_candidates_prompt_wiki.format(question, relation) + "; ".join(entity_candidates) + '\nScore: '
 
 
-def relation_search_prune(entity,  pre_relations, pre_head, question, args, graph):
-    relations = []
-    for graph_chunk in graph:
-        node_found = None
-        for node in graph_chunk['nodes']:
-            if node['name'] == entity:
-                node_found = node
+def relation_search_prune(entity,  pre_relations, pre_head, question, args, client): #@
 
-        if node_found is None:
-            continue
+    NODE_COLLECTION = 'nodes'   
+    RELATIONSHIP_COLLECTION = 'relationships'   
+    away = {}
+    print(f"""
+                FOR n IN {NODE_COLLECTION}
+                FILTER n._query_name == '{entity.lower()}'
+                RETURN n._id
+               """)
+    entity_id = client.query(f"""
+                FOR n IN {NODE_COLLECTION}
+                FILTER n._query_name == '{entity.lower()}'
+                RETURN n._id
+               """)
+    
+    if entity_id == []:
+        return[],away
+    else: 
+        entity_id = entity_id[0]
+    
+    print(entity_id)
+    relations = client.query(f"""
+                FOR r IN {RELATIONSHIP_COLLECTION}
+                FILTER r._from == '{entity_id.lower()}' OR r._to == '{entity_id.lower()}'
+                RETURN r.triplet_sentence
+               """)
+    print(relations)
 
-        temp = {}
-        related = []
+    results_from = client.query(f""" 
+                FOR r IN {RELATIONSHIP_COLLECTION}
+                FILTER r._to == '{entity_id.lower()}'
+                RETURN {{ "node": r._from, "triplet": r.triplet_sentence }}
+               """)
+    
+    result_to = client.query(f"""
+                FOR r IN {RELATIONSHIP_COLLECTION}
+                FILTER r._from == '{entity_id.lower()}'
+                RETURN {{ "node": r._to, "triplet": r.triplet_sentence }}
+                """)
+    results = results_from + result_to
 
-        for relationship in graph_chunk['relationships']:
-            if relationship['source']['name'] == entity:
-                relations.append(relationship['target']['name'] + relationship['properties']['triplet_sentence'])
-                related.append((relationship['target']['name'], relationship['properties']['triplet_sentence']))
-                temp[relationship['target']['name']] = relationship['properties']['triplet_sentence']
+    for result in results:
+        key = result['node']
+        triplet_sentence = result['triplet']
+        
+        away[key] = triplet_sentence
+    
 
-            if relationship['target']['name'] == entity:
-                relations.append(relationship['source']['name'] + relationship['properties']['triplet_sentence'])
-                related.append((relationship['source']['name'], relationship['properties']['triplet_sentence']))
-                temp[relationship['source']['name']] = relationship['properties']['triplet_sentence']
+    # for graph_chunk in graph:
+    #     node_found = None
+    #     for node in graph_chunk['nodes']:
+    #         if node['name'] == entity:
+    #             node_found = node
+
+    #     if node_found is None:
+    #         continue
+
+    #     temp = {}
+    #     related = []
+
+    #     for relationship in graph_chunk['relationships']:
+    #         if relationship['source']['name'] == entity:
+    #             relations.append(relationship['target']['name'] + relationship['properties']['triplet_sentence'])
+    #             related.append((relationship['target']['name'], relationship['properties']['triplet_sentence']))
+    #             temp[relationship['target']['name']] = relationship['properties']['triplet_sentence']
+
+    #         if relationship['target']['name'] == entity:
+    #             relations.append(relationship['source']['name'] + relationship['properties']['triplet_sentence'])
+    #             related.append((relationship['source']['name'], relationship['properties']['triplet_sentence']))
+    #             temp[relationship['source']['name']] = relationship['properties']['triplet_sentence']
     
     prompt = construct_relation_prune_prompt(question, entity, relations, args)
 
-    # print(prompt)
-
     result = run_llm(prompt, args.temperature_exploration, args.max_length, args.opeani_api_keys, args.LLM_type)
     
-    flag, retrieve_relations_with_scores = new_clean_relations(result, entity, relations, related) 
+    flag, retrieve_relations_with_scores = clean_relations(result, entity, relations) 
     # flag, retrieve_relations_with_scores = clean_relations(result, entity, relations) 
 
-
-    for object in retrieve_relations_with_scores:
-        if object['entity'] in temp:
-            object['relation'] = temp[object['entity']]
-
-
-    print('temp here: ', temp)
-
     print('retrieve_relations_with_scores: ', retrieve_relations_with_scores)
-
-    print(result)
+    print(retrieve_relations_with_scores)
     # raise Exception("stop")
 
     if flag:
-        return retrieve_relations_with_scores, temp
+        return retrieve_relations_with_scores, away
     else:
-        return [] # format error or too small max_length
+        return [], away # format error or too small max_length
     
 
 def del_all_unknown_entity(entity_candidates_id, entity_candidates_name):
@@ -192,27 +228,37 @@ def all_zero(topn_scores):
 
 
 def entity_search(entity, relation, graph, head):
-    neighbors = []
-    for graph_chunk in graph:
-        node_found = None
-        for node in graph_chunk['nodes']:
-            if node['name'] == entity:
-                node_found = node
-
-        if node_found is None:
-            continue
-
-        for relationship in graph_chunk['relationships']:
-            if relationship['source']['name'] == entity:
-                neighbors.append(relationship['target']['name'])
-
-            if relationship['target']['name'] == entity:
-                neighbors.append(relationship['source']['name'])
+    # neighbors = []
+    NODE_COLLECTION = 'nodes'   
+    RELATIONSHIP_COLLECTION = 'relationships'   
     
-
-    # id_list = [item['qid'] for item in entities_set]
-
-    # print('neighbors: ', neighbors)
+    entity_id = client.query(f"""
+                FOR n IN {NODE_COLLECTION}
+                FILTER n._query_name == '{entity.lower()}'
+                RETURN n._id
+               """)[0]
+    
+    entity_to = client.query(f"""
+                FOR r IN {RELATIONSHIP_COLLECTION}
+                FILTER r._from == '{entity_id.lower()}'
+                RETURN r._to
+               """)
+    entity_from = client.query(f"""
+                FOR r IN {RELATIONSHIP_COLLECTION}
+                FILTER r._to == '{entity_id.lower()}'
+                RETURN r._from
+               """)
+    
+    entity_id = entity_to + entity_from
+    neighbors = []
+    for id in entity_id:
+        neighbors.append(client.query(f"""
+                FOR n IN {NODE_COLLECTION}
+                FILTER n._id == '{id}'
+                RETURN n._name
+               """)[0])
+    print(neighbors)
+    # raise Exception("stop")
     
     return neighbors
 
