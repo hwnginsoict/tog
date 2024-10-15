@@ -139,25 +139,27 @@ def relation_search_prune(entity,  pre_relations, pre_head, question, args, clie
     if entity_id == []:
         return[],away
     else: 
-        entity_id = entity_id[0]
+        entity_id = entity_id
     
     print(entity_id)
+    for id in entity_id:
+        id = id.lower()
     relations = client.query(f"""
                 FOR r IN {RELATIONSHIP_COLLECTION}
-                FILTER r._from == '{entity_id.lower()}' OR r._to == '{entity_id.lower()}'
+                FILTER r._from in {entity_id} OR r._to in {entity_id}
                 RETURN r.triplet_sentence
                """)
     print(relations)
 
     results_from = client.query(f""" 
                 FOR r IN {RELATIONSHIP_COLLECTION}
-                FILTER r._to == '{entity_id.lower()}'
+                FILTER r._to in {entity_id}
                 RETURN {{ "node": r._from, "triplet": r.triplet_sentence }}
                """)
     
     result_to = client.query(f"""
                 FOR r IN {RELATIONSHIP_COLLECTION}
-                FILTER r._from == '{entity_id.lower()}'
+                FILTER r._from in {entity_id}
                 RETURN {{ "node": r._to, "triplet": r.triplet_sentence }}
                 """)
     results = results_from + result_to

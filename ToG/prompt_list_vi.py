@@ -1,10 +1,18 @@
-extract_question_entity = """Hãy trích xuất tất cả các thực thể có tên riêng trong câu hỏi sau. Các thực thể có thể bao gồm tên người, tổ chức, địa danh, quốc gia, hay các thực thể khác. Nếu có tên riêng chỉ trích xuất tên riêng.
+extract_question_entity = """Hãy trích xuất tất cả các thực thể có tên riêng trong câu hỏi sau. Các thực thể có thể bao gồm tên người, tổ chức, địa danh, quốc gia, hay các thực thể khác. Nếu như thực thể có tên riêng chỉ trích xuất tên riêng, không thêm danh từ ở trước tên riêng.
 
 Câu hỏi: {}
 
 Ví dụ:
 Câu hỏi: "Lê Hồng Việt là ai và vai trò của ông trong Khối sản phẩm AI của công ty FPT Smart Cloud là gì?"
 Thực thể: {Lê Hồng Việt, Khối sản phẩm AI, FPT Smart Cloud}
+
+Ví dụ:
+Câu hỏi: "Tập đoàn FPT có Trung tâm sản phẩm Conversation không?"
+Thực thể: {FPT, Trung tâm sản phẩm Conversation}
+
+Ví dụ:
+Câu hỏi: "Trung tâm Viettel Solution có ở quốc gia Việt Nam hay không?"
+Thực thể: {Viettel Solution, Việt Nam}
 
 Hãy trích xuất thực thể từ câu hỏi: {}
 Thực thể:
@@ -170,6 +178,47 @@ relation:
 12. wiki.relation.sex_or_gender
 13. wiki.relation.sibling
 14. wiki.relation.significant_event
+A: 1. {wiki.relation.family (Score: 0.5)}: relation này rất liên quan vì nó có thể cung cấp thông tin về bối cảnh gia đình của Mesih Pasha, bao gồm cả chú của ông, người đã trở thành hoàng đế.
+2. {wiki.relation.father (Score: 0.4)}: Chú là anh trai của cha, do đó relation với cha cũng có thể cung cấp thông tin liên quan.
+3. {wiki.relation.position_held (Score: 0.1)}: relation này có mức độ liên quan vừa phải vì nó có thể cung cấp thông tin về các vị trí quan trọng mà Mesih Pasha hoặc chú của ông đã giữ liên quan đến việc trở thành hoàng đế.
+
+Q: Viện Van Andel được thành lập một phần bởi doanh nhân người Mỹ nào, người nổi tiếng nhất với tư cách là đồng sáng lập của Tập đoàn Amway?
+entity chủ đề: Viện Van Andel
+relation:
+1. wiki.relation.affiliation
+2. wiki.relation.country
+3. wiki.relation.donations
+4. wiki.relation.educated_at
+5. wiki.relation.employer
+6. wiki.relation.headquarters_location
+7. wiki.relation.legal_form
+8. wiki.relation.located_in_the_administrative_territorial_entity
+9. wiki.relation.total_revenue
+A: 1. {wiki.relation.affiliation (Score: 0.4)}: relation này có liên quan vì nó có thể cung cấp thông tin về các cá nhân hoặc tổ chức liên quan đến Viện Van Andel, bao gồm cả doanh nhân người Mỹ đã đồng sáng lập Tập đoàn Amway.
+2. {wiki.relation.donations (Score: 0.3)}: relation này có liên quan vì nó có thể cung cấp thông tin về các khoản đóng góp tài chính cho Viện Van Andel, có thể bao gồm các khoản quyên góp từ doanh nhân người Mỹ đang được đề cập.
+3. {wiki.relation.educated_at (Score: 0.3)}: relation này có liên quan vì nó có thể cung cấp thông tin về nền tảng giáo dục của doanh nhân người Mỹ, điều có thể ảnh hưởng đến việc tham gia sáng lập Viện Van Andel.
+"""
+
+
+extract_relation_prompt_argo = """Vui lòng truy xuất %s relation (tách biệt bằng dấu chấm phẩy) đóng góp vào câu hỏi và đánh giá mức độ đóng góp của chúng trên thang Score từ 0 đến 1 (tổng Score của %s relation là 1).
+Q: Chú của Mesih Pasha trở thành hoàng đế vào năm nào?
+entity chủ đề: Mesih Pasha
+relation:
+1. wiki.relation.child
+2. wiki.relation.country_of_citizenship
+3. wiki.relation.date_of_birth
+4. wiki.relation.family
+5. wiki.relation.father
+6. wiki.relation.languages_spoken, written_or_signed
+7. wiki.relation.military_rank
+8. wiki.relation.occupation
+9. wiki.relation.place_of_death
+10. wiki.relation.position_held
+11. wiki.relation.religion_or_worldview
+12. wiki.relation.sex_or_gender
+13. wiki.relation.sibling
+14. wiki.relation.significant_event
+
 A: 1. {wiki.relation.family (Score: 0.5)}: relation này rất liên quan vì nó có thể cung cấp thông tin về bối cảnh gia đình của Mesih Pasha, bao gồm cả chú của ông, người đã trở thành hoàng đế.
 2. {wiki.relation.father (Score: 0.4)}: Chú là anh trai của cha, do đó relation với cha cũng có thể cung cấp thông tin liên quan.
 3. {wiki.relation.position_held (Score: 0.1)}: relation này có mức độ liên quan vừa phải vì nó có thể cung cấp thông tin về các vị trí quan trọng mà Mesih Pasha hoặc chú của ông đã giữ liên quan đến việc trở thành hoàng đế.

@@ -69,7 +69,7 @@ if __name__ == '__main__':
         
     datas, question_string = prepare_dataset(args.dataset)
     print("Start Running ToG on %s dataset." % args.dataset)
-    for i in tqdm(range(6,len(datas))):
+    for i in tqdm(range(26,27)):
         question = datas[question_string][i]
         topic_entity = extract_entity_question(question,args)
         cluster_chain_of_entities = []
